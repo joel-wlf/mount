@@ -1,8 +1,16 @@
-# React + Vite
+# 🏡 Mount.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+"Mount." is a platform to connect so called "smart villages". This is only a hypothetical prototype and also a submission for the european creativity, social and futuristics contest ["Europäischer Wettbewerb"](https://www.europaeischer-wettbewerb.de/).
+## Demo
 
-Currently, two official plugins are available:
+This project is also hosted on:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://mount-control.vercel.app
+
+## Authors
+
+- [@joel-wlf](https://www.github.com/joel-wlf)
+- [@Forbium](https://github.com/forbium)
+## License
+
+[Apache 2.0](https://choosealicense.com/licenses/apache-2.0/)
