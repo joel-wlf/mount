@@ -1,3 +1,9 @@
+body::before {
+  display: block;
+  content: '';
+  height: 10vh;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -7,15 +13,24 @@ body {
 nav {
   display: flex;
   align-items: center;
-  padding: 1em 1.7em;
+  padding: 0.5em 1.5em;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  padding-right: var(--geist-page-scrollbar-width);
-  height: var(--geist-page-nav-height);
-  backdrop-filter: saturate(180%) blur(5px);
   background-color: rgba(0, 0, 0, 0.8);
-  box-shadow: 0 0 0 1px #333;
+  height: 10vh;
+  backdrop-filter: saturate(180%) blur(5px);
   z-index: 999;
+}
+
+.nav--title {
+  color: #fff;
+  margin-right: auto;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.nav--normal {
+  box-shadow: 0 0 0 1px #333;
 }
