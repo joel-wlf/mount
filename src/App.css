@@ -1,4 +1,21 @@
-#root {
-  margin: 0 auto;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1em 1.7em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-right: var(--geist-page-scrollbar-width);
+  height: var(--geist-page-nav-height);
+  backdrop-filter: saturate(180%) blur(5px);
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 0 1px #333;
+  z-index: 999;
+}
