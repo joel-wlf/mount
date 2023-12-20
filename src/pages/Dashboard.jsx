@@ -6,7 +6,7 @@ function Dashboard() {
         <>
             <Navbar title="Dashboard" />
             <div className='content'>
-            <p>dfhjkdfhgjk <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />df</p>
+            <p>dfhjkdfhgjk <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />asdbfjkladsfbjk<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />df</p>
 
             </div>
         </>
