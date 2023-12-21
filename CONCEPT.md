@@ -1,20 +1,20 @@
-Menu Tree:
-    Dashboard -> Customizeble hyfographics?
-    ToDo?
-    News
-    My home
+# Menu Tree:
+    - Dashboard -> Customizeble Infographics?
+    - ToDo?
+    - News
+    - My home
         /Watter supply
         /Gas supply
         /Electricity supply
-            Solar Control
-    ==  Spar tipps
-    ==  Umwelt
-    ==  Vergleich
+          -> Solar Control
+    -> Spar tipps
+    -> Umwelt
+    -> Vergleich
 
-    My Car
+    - My Car
         Quitz actions
 
-    Services
+    - Services
         Order Car -> from-where
         Package Dickup
         "Airbnb" for events?
