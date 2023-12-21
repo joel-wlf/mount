@@ -14,7 +14,7 @@ function Navbar() {
     return (
         !menuOpen ? 
             <nav className='nav--normal'>
-                <p className='nav--title'>Mount.</p>
+                <p className='nav--title fadedown'>Mount.</p>
                 <Button auto type="abort" icon={<Menu />} onClick={toggleMenu} padding="5px" height="50px" margin="none"></Button> 
             </nav> :
             <AppMenu handleClick={toggleMenu} />
