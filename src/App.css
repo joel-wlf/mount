@@ -46,8 +46,21 @@ nav {
 
 .menu--item {
   margin: 0;
-  padding: 10px 1em;
   color: #cccccc;
+}
+
+.menu--item-cell {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding-block: 10px;
+  padding-inline: 15px;
+  gap: 10px;
+}
+
+.menu--item-cell img {
+  width: 1em;
 }
 
 .fadein {
