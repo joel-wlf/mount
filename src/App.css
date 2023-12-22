@@ -45,6 +45,7 @@ nav {
 }
 
 .menu--item {
+  margin: 0;
   padding: 10px 1em;
   color: #cccccc;
 }
