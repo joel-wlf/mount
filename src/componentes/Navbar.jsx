@@ -1,9 +1,9 @@
 import { Button } from '@geist-ui/core'
-import { Menu } from '@geist-ui/icons'
+import { Menu } from 'lucide-react'
 import AppMenu from './AppMenu'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
-function Navbar() {
+function Navbar({ toggleScroll }) {
 
     const [menuOpen, setMenuOpen] = useState(false)
 
@@ -11,11 +11,15 @@ function Navbar() {
         setMenuOpen(prevState => !prevState)
     }
 
+    useEffect(() => {
+        toggleScroll(menuOpen)
+    }, [menuOpen])
+
     return (
         !menuOpen ? 
             <nav className='nav--normal'>
-                <p className='nav--title'>Mount.</p>
-                <Button auto type="abort" icon={<Menu />} onClick={toggleMenu} padding="5px" height="50px" margin="none"></Button> 
+                <p className='nav--title fadedown' style={{animationDelay: '50ms'}}>Mount.</p>
+                <Button auto type="abort" className='fadedown' icon={<Menu />} onClick={toggleMenu} padding="5px" height="50px" margin="none"></Button> 
             </nav> :
             <AppMenu handleClick={toggleMenu} />
     )
