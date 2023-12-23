@@ -1,5 +1,5 @@
 import { Button } from '@geist-ui/core'
-import { Menu } from '@geist-ui/icons'
+import { Menu } from 'lucide-react'
 import AppMenu from './AppMenu'
 import { useState } from 'react'
 

@@ -1,5 +1,5 @@
 import { User, Button, Grid } from '@geist-ui/core'
-import { X, LogOut, Layout } from '@geist-ui/icons'
+import { X, LogOut, Home, LayoutDashboard, CarFront, Newspaper, Ticket } from 'lucide-react'
 import { useBodyScroll } from '@geist-ui/core'
 import { useEffect } from 'react'
 import MenuItem from './MenuItem'
@@ -26,11 +26,11 @@ function AppMenu(props) {
             </nav>
             <main className="menu">
             <Grid.Container gap={0}>
-                <MenuItem icon={<Layout />} text="Test" page="/test" child="1" />
-                <MenuItem icon={<X />} text="Test" page="/test" child="2" />
-                <MenuItem icon={<X />} text="Test" page="/test" child="3" />
-                <MenuItem icon={<X />} text="Test" page="/test" child="4" />
-                <MenuItem icon={<X />} text="Test" page="/test" child="5" />
+                <MenuItem icon={<LayoutDashboard />} text="Dashboard" page="/dashboard" child="1" />
+                <MenuItem icon={<Newspaper />} text="News" page="/test" child="2" />
+                <MenuItem icon={<Home />} text="My Home" page="/test" child="3" />
+                <MenuItem icon={<CarFront />} text="My Car" page="/test" child="4" />
+                <MenuItem icon={<Ticket />} text="Services" page="/test" child="5" />
             </Grid.Container>
             </main>
         </>

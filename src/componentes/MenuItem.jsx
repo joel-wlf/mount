@@ -1,5 +1,4 @@
 import { Grid, Button, Divider } from '@geist-ui/core'
-import {ArrowRight} from '@geist-ui/icons'
 
 
 function MenuItem(props) {
