@@ -1,13 +1,19 @@
 import Navbar from '../componentes/Navbar'
-import { Page } from '@geist-ui/core'
+import { useBodyScroll, Button } from '@geist-ui/core'
 
 function Dashboard() {
+    
+    const [hidden, setHidden] = useBodyScroll()
+    
+    function toggleScroll(state) {
+        setHidden(state)
+    }
+
     return (
         <>
-            <Navbar title="Dashboard" />
+            <Navbar toggleScroll={toggleScroll} />
             <div className='content'>
             <p>dfhjkdfhgjk <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />asdbfjkladsfbjk<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />df</p>
-
             </div>
         </>
     )
