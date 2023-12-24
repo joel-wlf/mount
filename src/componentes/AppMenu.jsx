@@ -16,7 +16,7 @@ function AppMenu(props) {
 
     return (
         <>
-            <div style={{backdropFilter: 'saturate(180%) blur(5px)', position: 'fixed', height: '110vh', width: '100vw', top: '-10vh'}}></div>
+            <div style={{backdropFilter: 'saturate(180%) blur(5px)', WebkitBackdropFilter: 'saturate(180%) blur(5px)', position: 'fixed', height: '110vh', width: '100vw', top: '-10vh'}}></div>
             <nav>
                 <User name="Joel Wolf" src='./profile-pic.jpeg' className='fadein' style={{animationDelay: '50ms'}} marginRight="auto" />
                 <Button auto type="abort" icon={<LogOut />} className='fadein' onClick={() => setVisible(true)} padding="5px" height="48px" margin="none"></Button> 
