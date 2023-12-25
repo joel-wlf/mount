@@ -18,7 +18,8 @@ function Navbar({ toggleScroll }) {
     return (
         !menuOpen ? 
             <nav className='nav--normal'>
-                <p className='nav--title fadedown' style={{animationDelay: '50ms'}}>Mount.</p>
+                <img src="icon.png" alt="logo" className="nav--logo fadedown" style={{animationDelay: '100ms'}}/>
+                <p className="nav--title fadedown" style={{animationDelay: '50ms'}}>ount.</p>
                 <Button auto type="abort" className='fadedown' icon={<Menu />} onClick={toggleMenu} padding="5px" height="50px" margin="none"></Button> 
             </nav> :
             <AppMenu handleClick={toggleMenu} />
