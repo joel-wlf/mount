@@ -36,6 +36,11 @@ nav {
   -webkit-backdrop-filter: saturate(180%) blur(5px);
 }
 
+.nav--logo {
+  width: 1.3em;
+  margin-right: 0.1em;
+}
+
 .menu--page {
   backdrop-filter: saturate(180%) blur(5px);
   -webkit-backdrop-filter: saturate(180%) blur(5px);

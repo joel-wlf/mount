@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1024 1024" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path d="M371.6 656.328C371.6 578.788 434.459 515.928 512 515.928C589.541 515.928 652.4 578.788 652.4 656.328C652.4 733.869 599.354 741.058 633.739 774C667.759 806.592 827.08 762.859 854.297 734.375C881.514 705.892 882.001 606.42 875.039 546.921C868.076 487.423 799.34 266.092 783.516 239.508C767.692 212.923 272.963 201.144 240.348 242.728C207.732 284.313 148.961 579.107 148.961 656.328C148.961 712.938 140.12 816.061 193.936 828.292C247.751 840.523 359.9 773.477 356.638 757.985C353.377 742.492 371.6 733.869 371.6 656.328Z" id="Fill"/>
+<path d="M625.121 559.785L679.45 649.681L593.345 774L148.961 806.942L220.918 179.458L755.269 225.741" id="Fill_2"/>
+<path d="M371.6 656.328C371.6 578.788 434.459 515.928 512 515.928C589.541 515.928 652.4 578.788 652.4 656.328C652.4 733.869 599.354 741.058 633.739 774C667.759 806.592 827.08 762.859 854.297 734.375C881.514 705.892 882.001 606.42 875.039 546.921C868.076 487.423 799.34 266.092 783.516 239.508C767.692 212.923 272.963 201.144 240.348 242.728C207.732 284.313 148.961 579.107 148.961 656.328C148.961 712.938 140.12 816.061 193.936 828.292C247.751 840.523 359.9 773.477 356.638 757.985C353.377 742.492 371.6 733.869 371.6 656.328Z" id="Fill_3"/>
+</defs>
+<g id="Ebene-3" vectornator:layerName="Ebene 3"/>
+<g id="Ebene-2" vectornator:layerName="Ebene 2">
+<use fill="#505050" fill-opacity="0" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 2" xlink:href="#Fill"/>
+<clipPath clip-rule="nonzero" id="ClipPath">
+<use xlink:href="#Fill"/>
+</clipPath>
+<g clip-path="url(#ClipPath)">
+<path d="M611.978 649.681L800.724 649.681M833.721 649.681L755.269 734.375M833.721 649.681L755.269 578.281" fill="none" opacity="1" stroke="#505050" stroke-linecap="round" stroke-linejoin="round" stroke-width="66.0827" vectornator:layerName="Kurve 1"/>
+</g>
+</g>
+<g id="Ebene-1" vectornator:layerName="Ebene 1">
+<use fill="#ffffff" fill-opacity="0" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Kurve 1" xlink:href="#Fill_2"/>
+<clipPath clip-rule="nonzero" id="ClipPath_2">
+<use xlink:href="#Fill_2"/>
+</clipPath>
+<g clip-path="url(#ClipPath_2)">
+<use fill="#505050" fill-opacity="0" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 1" xlink:href="#Fill_3"/>
+<clipPath clip-rule="nonzero" id="ClipPath_3">
+<use xlink:href="#Fill_3"/>
+</clipPath>
+<g clip-path="url(#ClipPath_3)">
+<path d="M181.899 774L271.324 247.236L406.857 247.236L512.349 528.084L617.143 247.236L752.676 247.236L842.101 774L705.869 774L660.458 470.797L536.103 774L481.61 774L363.542 470.797L318.131 774L181.899 774Z" fill="#505050" opacity="1" stroke="none" vectornator:layerName="Text 1"/>
+</g>
+</g>
+</g>
+<g id="Ebene-4" vectornator:layerName="Ebene 4">
+<path d="M432.124 656.328C432.124 611.323 468.608 574.839 513.613 574.839C558.618 574.839 595.102 611.323 595.102 656.328C595.102 701.334 558.618 737.818 513.613 737.818C468.608 737.818 432.124 701.334 432.124 656.328Z" fill="#505050" fill-opacity="0" fill-rule="nonzero" opacity="1" stroke="#505050" stroke-linecap="butt" stroke-linejoin="round" stroke-width="66.0827" vectornator:layerName="Oval 1"/>
+</g>
+</svg>
