@@ -8,7 +8,7 @@ function MenuItem(props) {
 
     return (
         <>
-            {props.child != 1 && <Divider className='fadein' style={{width:'100%', animationDelay: `${props.child * 50}ms`}} />}
+            {props.child != 1 && <Divider className='fadein' style={{width:'100%', animationDelay: `${props.child * 50}ms`, zIndex: 100}} />}
             <Grid xs={24} direction='row' alignItems='center' onClick={() => navigate(props.page)}>
                 <div className="menu--item-cell fadein" style={{animationDelay: `${props.child * 50}ms`}}>
                     {props.icon}
