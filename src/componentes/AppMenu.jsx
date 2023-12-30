@@ -25,8 +25,8 @@ function AppMenu(props) {
             <main className="menu">
             <Grid.Container gap={0}>
                 <MenuItem icon={<LayoutDashboard />} text="Dashboard" page="/" child="1" />
-                <MenuItem icon={<Newspaper />} text="News" page="/news" child="3" />
-                <MenuItem icon={<Leaf />} text="Energy" page="/energy" child="2" />
+                <MenuItem icon={<Newspaper />} text="News" page="/news" child="2" />
+                <MenuItem icon={<Leaf />} text="Energy" page="/energy" child="3" />
                 <MenuItem icon={<Home />} text="My Home" page="/home" child="4" />
                 <MenuItem icon={<CarFront />} text="My Car" page="/car" child="5" />
                 <MenuItem icon={<Ticket />} text="Services" page="/services" child="6" />
