@@ -24,11 +24,11 @@ function AppMenu(props) {
             </nav>
             <main className="menu">
             <Grid.Container gap={0}>
-                <MenuItem icon={<LayoutDashboard />} text="Dashboard" page="/dashboard" child="1" />
-                <MenuItem icon={<Newspaper />} text="News" page="/test" child="2" />
-                <MenuItem icon={<Home />} text="My Home" page="/test" child="3" />
-                <MenuItem icon={<CarFront />} text="My Car" page="/test" child="4" />
-                <MenuItem icon={<Ticket />} text="Services" page="/test" child="5" />
+                <MenuItem icon={<LayoutDashboard />} text="Dashboard" page="/" child="1" />
+                <MenuItem icon={<Newspaper />} text="News" page="/news" child="2" />
+                <MenuItem icon={<Home />} text="My Home" page="/home" child="3" />
+                <MenuItem icon={<CarFront />} text="My Car" page="/car" child="4" />
+                <MenuItem icon={<Ticket />} text="Services" page="/services" child="5" />
             </Grid.Container>
             </main>
             <Modal {...bindings}>
