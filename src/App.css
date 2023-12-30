@@ -81,6 +81,11 @@ nav {
   opacity: 0;
 }
 
+.content {
+  padding-top: 1.5em;
+  padding-inline: 1em;
+}
+
 @keyframes fadeIn{
   0% {
   transform: translate3d(0, 0.375rem, 0);
