@@ -13,6 +13,7 @@ function Dashboard() {
         <>
             <Navbar toggleScroll={toggleScroll} />
             <div className='content'>
+            <h2>Dashboard</h2>
             <p>dfhjkdfhgjk <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />asdbfjkladsfbjk<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />df</p>
             </div>
         </>
