@@ -75,16 +75,24 @@ nav {
   width: 1em;
 }
 
+.content {
+  padding-top: 1.5em;
+  padding-inline: 1em;
+}
+
+.news--actions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  justify-content: space-between;
+}
+
 .fadein {
   -webkit-animation: fadeIn 200ms ease;
   animation: fadeIn 200ms ease;
   animation-fill-mode: forwards;
   opacity: 0;
-}
-
-.content {
-  padding-top: 1.5em;
-  padding-inline: 1em;
 }
 
 @keyframes fadeIn{

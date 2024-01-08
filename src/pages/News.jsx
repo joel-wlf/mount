@@ -1,5 +1,5 @@
 import Navbar from '../componentes/Navbar'
-import { useBodyScroll, Button } from '@geist-ui/core'
+import { useBodyScroll, Button, Spacer } from '@geist-ui/core'
 import { SlidersHorizontal, Plus } from 'lucide-react'
 
 function News() {
@@ -15,8 +15,10 @@ function News() {
             <Navbar toggleScroll={toggleScroll} />
             <div className='content'>
                 <h2>News</h2>
-                <Button icon={<SlidersHorizontal />}>Filter</Button>
-                <Button type="secondary" icon={<Plus />}>Post</Button>
+                <div className="news--actions">
+                    <Button width="80%" type="secondary" icon={<Plus />}>Post News</Button>
+                    <Button width="20%" icon={<SlidersHorizontal />}></Button>
+                </div>
             </div>
         </>
     )
