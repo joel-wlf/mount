@@ -21,6 +21,10 @@ function News() {
                     <Button width="20%" icon={<SlidersHorizontal />}></Button>
                 </div>
                 <div className="news--articles">
+                    <NewsItem title="Treffen Gartenverein" subtitle="Der Gartenverein lädt alle Bewohner zu einem ..." image="gardening.jpg" />
+                    <NewsItem />
+                    <NewsItem />
+                    <NewsItem />
                     <NewsItem />
                 </div>
             </div>

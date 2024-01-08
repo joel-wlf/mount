@@ -6,7 +6,10 @@ function NewsItem(props) {
     
     return (
         <div className="news-article">
-            <div className="img-wrapper" style={{backgroundImage: "url(profile-pic.jpeg)", backgroundRepeat: "no-repeat", backgroundSize: "150%", backgroundPosition: "center"}}>
+            <div style={{backgroundImage: `url(/news/${props.image})`, backgroundRepeat: "no-repeat", backgroundSize: "200%", backgroundPosition: "center", borderRadius: "10px"}}></div>
+            <div className="article-info">
+                <h4>{props.title}</h4>
+                <p>{props.subtitle}</p>
             </div>
         </div>
     )
