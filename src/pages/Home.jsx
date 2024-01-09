@@ -12,7 +12,9 @@ function Home() {
     return (
         <>
             <Navbar toggleScroll={toggleScroll} />
-            <h1>Home</h1>
+            <div className='content'>
+                <h2>Home</h2>
+            </div>
         </>
     )
 }
