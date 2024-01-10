@@ -1,5 +1,4 @@
 function NewsItem(props) {
-    <var
     return (
         <div className="news-article">
             <div style={{backgroundRepeat: "no-repeat", backgroundSize: "200%", backgroundPosition: "center", borderRadius: "10px", maxHeight: "100%"}}>
