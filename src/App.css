@@ -102,6 +102,7 @@ nav {
   grid-template-areas: 
     "image info info"; 
     overflow: hidden;
+  user-select: none;
 }
 
 .news-article:hover {
