@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import { CssBaseline, GeistProvider } from '@geist-ui/core'
-import { Analytics } from '@vercel/analytics/react';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -10,7 +9,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <GeistProvider themeType="dark">
       <CssBaseline />
       <App />
-    </GeistProvider>       
-    <Analytics /> 
-  </React.StrictMode>,
+    </GeistProvider>
+  </React.StrictMode>
 )
