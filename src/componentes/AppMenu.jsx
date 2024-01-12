@@ -1,5 +1,5 @@
 import { User, Button, Grid, Modal } from '@geist-ui/core'
-import { X, LogOut, Home, LayoutDashboard, CarFront, Newspaper, Ticket } from 'lucide-react'
+import { X, LogOut, Leaf, Home, LayoutDashboard, CarFront, Newspaper, Ticket } from 'lucide-react'
 import { useBodyScroll, useModal } from '@geist-ui/core'
 import { useEffect } from 'react'
 import MenuItem from './MenuItem'
@@ -26,9 +26,10 @@ function AppMenu(props) {
             <Grid.Container gap={0}>
                 <MenuItem icon={<LayoutDashboard />} text="Dashboard" page="/" child="1" />
                 <MenuItem icon={<Newspaper />} text="News" page="/news" child="2" />
-                <MenuItem icon={<Home />} text="My Home" page="/home" child="3" />
-                <MenuItem icon={<CarFront />} text="My Car" page="/car" child="4" />
-                <MenuItem icon={<Ticket />} text="Services" page="/services" child="5" />
+                <MenuItem icon={<Leaf />} text="Energy" page="/energy" child="3" />
+                <MenuItem icon={<Home />} text="My Home" page="/home" child="4" />
+                <MenuItem icon={<CarFront />} text="My Car" page="/car" child="5" />
+                <MenuItem icon={<Ticket />} text="Services" page="/services" child="6" />
             </Grid.Container>
             </main>
             <Modal {...bindings}>
