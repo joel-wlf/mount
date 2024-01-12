@@ -47,7 +47,7 @@ nav {
 }
 
 .menu { 
-  z-index: 10000;
+  z-index: 10;
   position: fixed;
   background-color: rgb(0, 0, 0, 0.9);
   top: 10vh;
