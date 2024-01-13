@@ -144,7 +144,7 @@ function Home() {
             <Navbar toggleScroll={toggleScroll} />
             <div className='content'>
               <h2>Home</h2>
-              <EnergyChart title="Electricity" data={chartdata2} color="yellow" category="kWh" minValue={10} />
+              <EnergyChart title="Electricity" data={chartdata2} color="green" category="kWh" minValue={10} />
             </div>
         </>
     )
