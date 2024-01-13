@@ -1,7 +1,7 @@
 import Navbar from '../componentes/Navbar'
-import { useBodyScroll } from '@geist-ui/core'
-
-import { AreaChart } from "@tremor/react";
+import EnergyChart from '../componentes/EnergyChart.jsx'
+import { ButtonGroup, Button, useBodyScroll } from '@geist-ui/core'
+import { AreaChart, Title } from "@tremor/react";
 
 function Home() {
     
@@ -13,53 +13,129 @@ function Home() {
 
     const chartdata2 = [
         {
-          date: "Jan 23",
-          2022: 45,
+          date: "01.12.",
+          kWh: 19,
         },
         {
-          date: "Feb 23",
-          2022: 52,
+          date: "02.12",
+          kWh: 18,
         },
         {
-          date: "Mar 23",
-          2022: 48,
+          date: "03.12.",
+          kWh: 20,
         },
         {
-          date: "Apr 23",
-          2022: 61,
+          date: "04.12.",
+          kWh: 19,
         },
         {
-          date: "May 23",
-          2022: 55,
+          date: "05.12.",
+          kWh: 22,
         },
         {
-          date: "Jun 23",
-          2022: 67,
+          date: "06.12.",
+          kWh: 20,
         },
         {
-          date: "Jul 23",
-          2022: 60,
+          date: "07.12.",
+          kWh: 22,
         },
         {
-          date: "Aug 23",
-          2022: 72,
+          date: "08.12.",
+          kWh: 19,
         },
         {
-          date: "Sep 23",
-          2022: 65,
+          date: "09.12.",
+          kWh: 20,
         },
         {
-          date: "Oct 23",
-          2022: 68,
+          date: "18.12.",
+          kWh: 18,
         },
         {
-          date: "Nov 23",
-          2022: 74,
+          date: "11.12.",
+          kWh: 19,
         },
         {
-          date: "Dec 23",
-          2022: 71,
+          date: "12.12.",
+          kWh: 19,
         },
+        {
+          date: "13.12.",
+          kWh: 18,
+        },
+        {
+          date: "14.12.",
+          kWh: 20,
+        },
+        {
+          date: "19.12.",
+          kWh: 19,
+        },
+        {
+          date: "16.12.",
+          kWh: 18,
+        },
+        {
+          date: "17.12.",
+          kWh: 19,
+        },
+        {
+          date: "18.12",
+          kWh: 18,
+        },
+        {
+          date: "19.12.",
+          kWh: 20,
+        },
+        {
+          date: "20.12.",
+          kWh: 19,
+        },
+        {
+          date: "21.12.",
+          kWh: 22,
+        },
+        {
+          date: "22.12.",
+          kWh: 20,
+        },
+        {
+          date: "23.12.",
+          kWh: 22,
+        },
+        {
+          date: "24.12.",
+          kWh: 19,
+        },
+        {
+          date: "22.12.",
+          kWh: 20,
+        },
+        {
+          date: "26.12.",
+          kWh: 18,
+        },
+        {
+          date: "27.12.",
+          kWh: 19,
+        },
+        {
+          date: "28.12.",
+          kWh: 19,
+        },
+        {
+          date: "29.12.",
+          kWh: 18,
+        },
+        {
+          date: "30.12.",
+          kWh: 20,
+        },
+        {
+          date: "31.12.",
+          kWh: 19,
+        }
       ];
       
 
@@ -67,20 +143,8 @@ function Home() {
         <>
             <Navbar toggleScroll={toggleScroll} />
             <div className='content'>
-                <h2>Home</h2>
-                    <h4>Strom</h4>
-                    <AreaChart
-                        className="h-50 mt-4"
-                        showGridLines={false}
-                        showLegend={false}
-                        data={chartdata2}
-                        index="date"
-                        categories={['2022']}
-                        colors={["green"]}
-                        yAxisWidth={30}
-                        onValueChange={(v) => setValue(v)}
-                        connectNulls={true}
-                      />
+              <h2>Home</h2>
+              <EnergyChart title="Electricity" data={chartdata2} color="yellow" category="kWh" minValue={10} />
             </div>
         </>
     )
