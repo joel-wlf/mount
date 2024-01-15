@@ -1,5 +1,6 @@
 import Navbar from '../componentes/Navbar'
 import EnergyChart from '../componentes/EnergyChart.jsx'
+import EnergyCounter from '../componentes/EnergyCounter.jsx'
 import { useBodyScroll } from '@geist-ui/core'
 import monthData from '../monthData.js'
 
@@ -17,7 +18,8 @@ function Home() {
             <div className='content'>
               <h2>Home</h2>
               <EnergyChart title="Electricity" data={monthData} color="green" category="kWh" minValue={15} />
-              <EnergyChart title="Heipellets" data={monthData} color="yellow" category="kg" minValue={2} />
+              <EnergyCounter title="Electricity" metric="20 kWh" delta="30.5%" deltaType="moderateDecrease" />
+              <EnergyChart title="Heizpellets" data={monthData} color="yellow" category="kg" minValue={2} />
               <EnergyChart title="Water" data={monthData} color="blue" category="L" minValue={150} />
             </div>
         </>
