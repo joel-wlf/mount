@@ -4,11 +4,11 @@ import { Metric, Text, Flex, ProgressBar, Grid } from "@tremor/react"
 function EnergyStorage(props) {
   return (
         <Card key={props.title}>
-            <Flex>
-                <Metric>{`${props.progress}%`}</Metric>
+            <Flex justifyContent="start" alignItems="center" className="truncate space-x-3">
+                <Metric className="m-3" >{`${props.progress}%`}</Metric>
                 <Text>in Storage</Text>
             </Flex>
-          <ProgressBar value={props.progress} className="mt-2" />
+          <ProgressBar color={props.color} value={props.progress} className="mt-2" />
         </Card>
   );
 }

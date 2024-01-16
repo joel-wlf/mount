@@ -7,8 +7,8 @@ function EnergyChart(props) {
 
 
     return (
-        <div>
-            <h3 className='translate-y-3'>{props.title}</h3>
+        <div className="mb-5">
+            <h3 className='mt-5'>{props.title}</h3>
             <AreaChart
                 className="h-[150px] mt-4"
                 showGridLines={false}
