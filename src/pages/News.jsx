@@ -22,10 +22,8 @@ function News() {
                 </div>
                 <div className="news--articles">
                     <NewsItem title="Treffen Gartenverein" subtitle="Der Gartenverein lädt alle Bewohner zu einem gemeinsamen ..." image="gardening.jpg" />
-                    <NewsItem />
-                    <NewsItem />
-                    <NewsItem />
-                    <NewsItem />
+                    <NewsItem title="Erntebericht 2028" subtitle="Der Erntebericht für 2028 ist veröffentlicht und kann aufgerufen werden ..." image="agrar.jpg" />
+                    <NewsItem title="Winterverkauf Blumenladen" subtitle="Der Erntebericht für 2028 ist veröffentlicht und kann aufgerufen ..." image="flower-shop.jpg" />
                 </div>
             </div>
         </>
