@@ -1,5 +1,5 @@
 import { Card } from "@geist-ui/core"
-import {  Metric, Text, Flex, BadgeDelta, Grid } from "@tremor/react";
+import {  Metric, Text, Flex, BadgeDelta } from "@tremor/react";
 
 function EnergyCounter(props) {
   return (

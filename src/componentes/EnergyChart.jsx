@@ -1,5 +1,4 @@
-import { ButtonGroup, Button, useBodyScroll } from '@geist-ui/core'
-import { AreaChart, Title } from "@tremor/react";
+import { AreaChart } from "@tremor/react";
 
 
 function EnergyChart(props) {
