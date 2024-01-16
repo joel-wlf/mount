@@ -1,7 +1,7 @@
 import { Card } from "@geist-ui/core"
 import {  Metric, Text, Flex, BadgeDelta, Grid } from "@tremor/react";
 
-export default function EnergyCounter(props) {
+function EnergyCounter(props) {
   return (
     <Grid numItemsSm={2} numItemsLg={3} className="gap-6">
         <Card className="mb-20" key={props.title}>
@@ -14,3 +14,5 @@ export default function EnergyCounter(props) {
     </Grid>
   );
 }
+
+export default EnergyCounter
