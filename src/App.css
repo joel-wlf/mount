@@ -77,8 +77,7 @@ nav {
 }
 
 .content {
-  padding-top: 1.5em;
-  padding-inline: 1.5em;
+  padding: 1.5em;
 }
 
 .content h2 {
