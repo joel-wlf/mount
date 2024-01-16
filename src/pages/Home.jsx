@@ -19,7 +19,7 @@ function Home() {
               <h2>Home</h2>
               <EnergyChart title="Electricity" data={monthData} color="green" category="kWh" minValue={15} />
               <EnergyCounter title="Electricity" metric="20 kWh" delta="30.5%" deltaType="moderateDecrease" />
-              <EnergyChart title="Heizpellets" data={monthData} color="yellow" category="kg" minValue={2} />
+              <EnergyChart title="Heizpellets" data={monthData} color="yellow" category="%" minValue={0} />
               <EnergyChart title="Water" data={monthData} color="blue" category="L" minValue={150} />
             </div>
         </>
