@@ -24,7 +24,7 @@ function Home() {
               <EnergyChart title="Heizpellets" data={monthData} color="yellow" category="%" minValue={0} />
               <EnergyStorage title="Heizpellets" progress={73} color="yellow" />
               <EnergyChart title="Water" data={monthData} color="blue" category="L" minValue={150} />
-              <EnergyRating values={[40, 30, 20, 10]} />
+              <EnergyRating markerValue={50} values={[40, 30, 20, 10]} />
             </div>
         </>
     )
