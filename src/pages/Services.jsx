@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar'
-import ServiceItem from '../components'
+import ServiceItem from '../components/ServiceItem'
 import { useBodyScroll } from '@geist-ui/core'
 
 
@@ -16,7 +16,7 @@ function Services() {
             <Navbar toggleScroll={toggleScroll} />
             <div className='content'>
                 <h2>Services</h2>
-
+                <ServiceItem />
             </div>
         </>
     )

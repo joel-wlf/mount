@@ -1,4 +1,4 @@
-import Navbar from '../componentes/Navbar'
+import Navbar from '../components/Navbar'
 import { useBodyScroll, Button } from '@geist-ui/core'
 
 function Dashboard() {
