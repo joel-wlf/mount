@@ -1,11 +1,12 @@
 import { Card } from "@geist-ui/core"
-import { Metric, Text, Flex, ProgressBar, Grid } from "@tremor/react"
 
 function EnergyStorage(props) {
   return (
-        <Card key={props.title}>
+        <div className="flex items-center justify-center w-full p-3">
+        <Card  width="90%" key={props.title}>
             <h3>Package Delivery</h3>
         </Card>
+        </div>
   );
 }
 
