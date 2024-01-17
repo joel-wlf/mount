@@ -6,7 +6,7 @@ function EnergyStorage(props) {
         <Card key={props.title}>
             <Flex justifyContent="start" alignItems="center" className="truncate space-x-3">
                 <Metric className="m-3" >{`${props.progress}%`}</Metric>
-                <Text>in Storage</Text>
+                <Text>{props.subtitle}</Text>
             </Flex>
           <ProgressBar color={props.color} value={props.progress} className="mt-2" />
         </Card>
