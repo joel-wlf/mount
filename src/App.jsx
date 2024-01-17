@@ -3,6 +3,7 @@ import Dashboard from './pages/Dashboard'
 import News from './pages/News'
 import Home from './pages/Home'
 import Car from './pages/Car'
+import Services from './pages/Services'
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 
 
@@ -15,6 +16,7 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/home" element={<Home />} />
           <Route path="/car" element={<Car />} />
+          <Route path="/services" element={<Services />} />
         </Route>
       </Routes>
     </BrowserRouter>
