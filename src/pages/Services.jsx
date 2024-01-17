@@ -1,4 +1,5 @@
-import Navbar from '../componentes/Navbar'
+import Navbar from '../components/Navbar'
+import ServiceItem from '../components'
 import { useBodyScroll } from '@geist-ui/core'
 
 

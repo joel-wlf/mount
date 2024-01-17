@@ -1,8 +1,8 @@
-import Navbar from '../componentes/Navbar'
-import EnergyChart from '../componentes/EnergyChart.jsx'
-import EnergyCounter from '../componentes/EnergyCounter.jsx'
-import EnergyStorage from '../componentes/EnergyStorage.jsx'
-import EnergyRating from '../componentes/EnergyRating.jsx'
+import Navbar from '../components/Navbar.js'
+import EnergyChart from '../components/EnergyChart.js'
+import EnergyCounter from '../components/EnergyCounter.jsx'
+import EnergyStorage from '../components/EnergyStorage.js'
+import EnergyRating from '../components/EnergyRating.js'
 import { useBodyScroll } from '@geist-ui/core'
 import monthData from '../monthData.js'
 
