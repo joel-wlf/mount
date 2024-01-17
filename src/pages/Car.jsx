@@ -19,8 +19,8 @@ function Car() {
             <Navbar toggleScroll={toggleScroll} />
             <div className='content'>
               <h2>Car</h2>
-              <EnergyChart title="Wood Pellets" data={monthData} color="yellow" category="%" minValue={0} />
-              <EnergyStorage title="Wood Pellets" subtitle="in Battery" progress={73} color="yellow" />
+              <EnergyChart title="Battery usage" data={monthData} color="green" category="%" minValue={0} />
+              <EnergyStorage title="Battery usage" subtitle="in Battery" progress={73} color="green" />
             </div>
         </>
     )
