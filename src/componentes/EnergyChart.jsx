@@ -17,11 +17,10 @@ function EnergyChart(props) {
                 showYAxis={false}
                 data={props.data}
                 minValue={props.minValue}   
-                index="date"
+                index={props.index}
                 categories={[props.category]}
                 colors={[props.color]}
                 yAxisWidth={30}
-                onValueChange={(v) => setValue(v)}
                 connectNulls={true}
                 />
         </div>
