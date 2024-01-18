@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar'
 import ServiceItem from '../components/ServiceItem'
 import { useState } from 'react'
-import { useBodyScroll } from '@geist-ui/core'
+import { Divider, useBodyScroll } from '@geist-ui/core'
 
 
 function Services() {
@@ -18,10 +18,12 @@ function Services() {
         return (
             <>
                 <h2>Services</h2>
+                <Divider className='z-0'>Community</Divider>
+                <ServiceItem title="Ride Share" icon="CarTaxiFront" buttonText="Discover Drivers" />
                 <ServiceItem title="Package Pickup" icon="Package" buttonText="Send Package" />
-                <ServiceItem title="Package Pickup" icon="Package" buttonText="Send Package" />
-                <ServiceItem title="Package Pickup" icon="Package" buttonText="Send Package" />
-                <ServiceItem title="Package Pickup" icon="Package" buttonText="Send Package" />
+                <Divider className='z-0'>Corporate</Divider>
+                <ServiceItem title="Event Planning" icon="CalendarClock" buttonText="Book Event" />
+                <ServiceItem title="Restaurant" icon="Utensils" buttonText="Reserve Table" />
             </>
         )
     }
