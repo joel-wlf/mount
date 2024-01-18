@@ -1,8 +1,6 @@
 import Navbar from '../components/Navbar.jsx'
 import EnergyChart from '../components/EnergyChart'
-import EnergyCounter from '../components/EnergyCounter'
 import EnergyStorage from '../components/EnergyStorage'
-import EnergyRating from '../components/EnergyRating'
 import { useBodyScroll } from '@geist-ui/core'
 import batteryData from '../batteryData.js'
 
