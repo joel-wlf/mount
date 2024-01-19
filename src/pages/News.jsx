@@ -2,6 +2,7 @@ import Navbar from '../componentes/Navbar'
 import NewsItem from '../componentes/NewsItem'
 import { useBodyScroll, Button, Spacer } from '@geist-ui/core'
 import { SlidersHorizontal, Plus } from 'lucide-react'
+import newsData from '../data/newsData'
 
 function News() {
     
@@ -10,6 +11,8 @@ function News() {
     function toggleScroll(state) {
         setHidden(state)
     }
+
+    const articleItems = newsData.map(article => <NewsItem title={article.title} subtitle={article.description} image={article.image} />)
 
     return (
         <>
@@ -21,9 +24,7 @@ function News() {
                     <Button width="20%" icon={<SlidersHorizontal />}></Button>
                 </div>
                 <div className="news--articles">
-                    <NewsItem title="Treffen Gartenverein" subtitle="Der Gartenverein lädt alle Bewohner zu einem gemeinsamen ..." image="gardening.jpg" />
-                    <NewsItem title="Erntebericht 2028" subtitle="Der Erntebericht für 2028 ist veröffentlicht und kann aufgerufen werden ..." image="agrar.jpg" />
-                    <NewsItem title="Winterverkauf Blumenladen" subtitle="Der Erntebericht für 2028 ist veröffentlicht und kann aufgerufen ..." image="flower-shop.jpg" />
+                    {articleItems}
                 </div>
             </div>
         </>
