@@ -4,7 +4,7 @@ import EnergyCounter from '../componentes/EnergyCounter.jsx'
 import EnergyStorage from '../componentes/EnergyStorage.jsx'
 import EnergyRating from '../componentes/EnergyRating.jsx'
 import { useBodyScroll } from '@geist-ui/core'
-import monthData from '../monthData.js'
+import monthData from '../data/monthData.js'
 
 function Home() {
     
