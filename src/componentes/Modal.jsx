@@ -5,10 +5,10 @@ function Modal({handleClose, text}) {
 
     const slideIn = {
         hidden: {
-            x: "-100vw"
+            y: "100vh"
         },
         visible: {
-            x: "0",
+            y: "0",
             opacity: 1,
             transition: {
                 duration: 0.1,
@@ -18,7 +18,7 @@ function Modal({handleClose, text}) {
             }
         },
         exit: {
-            x: "100vw"
+            y: "-100vh"
         }
     }
 
