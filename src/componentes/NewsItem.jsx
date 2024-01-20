@@ -6,8 +6,14 @@ function NewsItem(props) {
 
     const [modalOpen, setModalOpen] = useState(false)
 
-    const openModal = () => setModalOpen(true)
-    const closeModal = () => setModalOpen(false)
+    const openModal = () => {
+        setModalOpen(true)
+        props.handleScroll(true)
+    }
+    const closeModal = () => {
+        setModalOpen(false)
+        props.handleScroll(false)
+    }
 
     return (
         <div className="news-article" onClick={() => (modalOpen ? closeModal() : openModal())}>
