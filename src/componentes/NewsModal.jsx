@@ -1,7 +1,8 @@
 import { motion } from "framer-motion"
+import { X } from "lucide-react"
 import Backdrop from "./Backdrop"
 
-function NewsModal({handleClose, text}) {
+function NewsModal({handleClose, data}) {
 
     const slideIn = {
         hidden: {
@@ -27,14 +28,19 @@ function NewsModal({handleClose, text}) {
             onClick={handleClose}
         >
             <motion.div
-                className="fixed overflow-y-scroll w-[80%] h-[90%] bg-red-800 border-[1px] border-[#333] rounded-[10px]"
+                className="fixed overflow-y-scroll w-[80%] h-[90%] bg-black border-[1px] border-[#333] rounded-[10px]"
                 onClick={(e) => e.stopPropagation()}
                 variants={slideIn}
                 initial="hidden"
                 animate="visible"
                 exit="exit"
             >
-                <p>test<br></br><br></br><br></br><br></br><br></br><br></br><br></br>test<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>est<br></br><br></br><br></br><br></br><br></br>t<br></br><br></br><br></br><br></br><br></br>t<br></br><br></br><br></br><br></br><br></br></p>
+                <button className="absolute top-0 right-0 p-1 m-3 bg-[rgba(0,0,0,0.4)] aspect-square rounded-full backdrop-blur-lg" onClick={handleClose}><X size={18} /></button>
+                <img src={`news/${data.image}`} />
+                <div className="p-6">
+                    <h3>{data.title}</h3>
+                    <p className="text-white leading-tight">{data.body}</p>
+                </div>
             </motion.div>
         </Backdrop>
     )

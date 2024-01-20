@@ -1,8 +1,9 @@
 export default [
     {
-        title: "Treffen Gartenverein",
+        title: "Treffen Gartenbauverein",
         description: "Der Gartenverein lädt alle Bewohner zu einem gemeinsamen ...",
-        image: "gardening.jpg"
+        image: "gardening.jpg",
+        body: "Nächsten Samstag lädt der Gartenbauverein zu einem gemeinsamen Treffen ein, wo wir uns über die Pflanzmethoden und die Neuerungen der Software unserer Gewächshäuser besprechen. Alle Dorfbewohner die ein Gewächshaus besitzen (also alle 😀) sind herzlich eingeladen zum Treffen zu kommen. Das Treffen startet nächsten Samstag gegen 10 Uhr. Alle sind herzlich eingeladen Snacks und Dips aus eigenem Anbau mitzubringen. Euer Gartenbauverein"
     },
     {
         title: "Erntebericht 2028",
