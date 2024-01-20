@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { AnimatePresence } from "framer-motion"
-import Modal from "./Modal"
+import NewsModal from "./NewsModal"
 
 function NewsItem(props) {
 
@@ -12,7 +12,7 @@ function NewsItem(props) {
     return (
         <div className="news-article" onClick={() => (modalOpen ? closeModal() : openModal())}>
             <AnimatePresence initial={false} mode="wait">
-                {modalOpen && <Modal modalOpen={modalOpen} handleClose={closeModal} />}
+                {modalOpen && <NewsModal modalOpen={modalOpen} handleClose={closeModal} />}
             </AnimatePresence>
             <div className="article-image">
                 <img src={`news/${props.image}`} />

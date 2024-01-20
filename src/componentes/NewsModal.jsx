@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import Backdrop from "./Backdrop"
 
-function Modal({handleClose, text}) {
+function NewsModal({handleClose, text}) {
 
     const slideIn = {
         hidden: {
@@ -18,7 +18,7 @@ function Modal({handleClose, text}) {
             }
         },
         exit: {
-            y: "-100vh"
+            y: "100vh"
         }
     }
 
@@ -40,4 +40,4 @@ function Modal({handleClose, text}) {
     )
 }
 
-export default Modal
+export default NewsModal
