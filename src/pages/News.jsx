@@ -12,7 +12,7 @@ function News() {
         setHidden(state)
     }
 
-    const articleItems = newsData.map(article => <NewsItem handleScroll={setHidden} data={article}/>)
+    const articleItems = newsData.map(article => <NewsItem key={article.title} handleScroll={setHidden} data={article}/>)
 
     return (
         <>
