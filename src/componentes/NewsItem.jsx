@@ -18,14 +18,14 @@ function NewsItem(props) {
     return (
         <div className="news-article" onClick={() => (modalOpen ? closeModal() : openModal())}>
             <AnimatePresence initial={false} mode="wait">
-                {modalOpen && <NewsModal modalOpen={modalOpen} handleClose={closeModal} />}
+                {modalOpen && <NewsModal data={props.data} modalOpen={modalOpen} handleClose={closeModal} />}
             </AnimatePresence>
             <div className="article-image">
-                <img src={`news/${props.image}`} />
+                <img src={`news/${props.data.image}`} />
             </div>
             <div className="article-info">
-                <h4>{props.title}</h4>
-                <p>{props.subtitle}</p>
+                <h4>{props.data.title}</h4>
+                <p>{props.data.description}</p>
             </div>
         </div>
     )
