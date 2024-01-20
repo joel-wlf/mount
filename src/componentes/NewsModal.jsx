@@ -39,7 +39,7 @@ function NewsModal({handleClose, data}) {
                 <img src={`news/${data.image}`} />
                 <div className="p-6">
                     <h3>{data.title}</h3>
-                    <p className="text-white leading-tight">{data.body}</p>
+                    <p className="text-gray-400 leading-tight">{data.body}</p>
                 </div>
             </motion.div>
         </Backdrop>
