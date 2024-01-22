@@ -1,15 +1,15 @@
-import './App.css'
-import Dashboard from './pages/Dashboard'
-import News from './pages/News'
-import Home from './pages/Home'
-import Car from './pages/Car'
-import Services from './pages/Services'
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Car from './pages/Car';
+import Dashboard from './pages/Dashboard';
+import Home from './pages/Home';
+import News from './pages/News';
+import Services from './pages/Services';
 
 
 function App() {
   return (
-      <BrowserRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/">
           <Route index element={<Dashboard />} />
@@ -20,7 +20,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
