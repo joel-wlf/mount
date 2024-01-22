@@ -33,7 +33,7 @@ function Services() {
         <>
             <Navbar toggleScroll={toggleScroll} />
             <div className='content'>
-                <Menu />
+                {service}
             </div>
         </>
     )
