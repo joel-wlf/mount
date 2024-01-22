@@ -1,8 +1,7 @@
+import { Divider, useBodyScroll } from '@geist-ui/core'
+import { useState } from 'react'
 import Navbar from '../components/Navbar'
 import ServiceItem from '../components/ServiceItem'
-import { useState } from 'react'
-import { Ticket } from 'lucide-react'
-import { Tabs, Divider, useBodyScroll } from '@geist-ui/core'
 
 
 function Services() {
