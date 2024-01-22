@@ -1,4 +1,4 @@
-import { Grid, Divider } from '@geist-ui/core';
+import { Divider, Grid } from '@geist-ui/core';
 import { useNavigate } from 'react-router-dom';
 
 function MenuItem(props) {

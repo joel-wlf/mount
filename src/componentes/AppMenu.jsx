@@ -1,15 +1,14 @@
-import { User, Button, Grid, Modal } from '@geist-ui/core';
+import { Button, Grid, Modal, User, useBodyScroll, useModal } from '@geist-ui/core';
 import {
-  X,
-  LogOut,
-  Leaf,
+  CarFront,
   Home,
   LayoutDashboard,
-  CarFront,
+  Leaf,
+  LogOut,
   Newspaper,
   Ticket,
+  X,
 } from 'lucide-react';
-import { useBodyScroll, useModal } from '@geist-ui/core';
 import { useEffect } from 'react';
 import MenuItem from './MenuItem';
 

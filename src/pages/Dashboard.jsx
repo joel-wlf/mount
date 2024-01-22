@@ -1,5 +1,5 @@
+import { useBodyScroll } from '@geist-ui/core';
 import Navbar from '../componentes/Navbar';
-import { useBodyScroll, Button } from '@geist-ui/core';
 
 function Dashboard() {
   const [hidden, setHidden] = useBodyScroll();
