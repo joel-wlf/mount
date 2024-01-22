@@ -40,7 +40,8 @@ function NewsModal({ handleClose, data }) {
         </button>
         <img src={`news/${data.image}`} />
         <div className="p-6">
-          <h3>{data.title}</h3>
+          <h3 className='m-0'>{data.title}</h3>
+          <p className='text-gray-500 m-0'>{`${data.date} | ${data.user}`}</p>
           <p className="text-gray-400 leading-tight">{data.body}</p>
         </div>
       </motion.div>

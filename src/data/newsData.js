@@ -3,6 +3,8 @@ export default [
     title: 'Treffen Gartenbauverein',
     description: 'Der Gartenverein lädt alle Bewohner zu einem gemeinsamen ...',
     image: 'gardening.jpg',
+    date: '12.05.2028',
+    user: 'Gartenbau',
     body: 'Nächsten Samstag lädt der Gartenbauverein zu einem gemeinsamen Treffen ein, wo wir uns über die Pflanzmethoden und die Neuerungen der Software unserer Gewächshäuser besprechen. Alle Dorfbewohner die ein Gewächshaus besitzen (also alle 😀) sind herzlich eingeladen zum Treffen zu kommen. Das Treffen startet nächsten Samstag gegen 10 Uhr. Alle sind herzlich eingeladen Snacks und Dips aus eigenem Anbau mitzubringen. Euer Gartenbauverein',
   },
   {
