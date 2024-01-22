@@ -1,7 +1,7 @@
 import { useBodyScroll } from '@geist-ui/core';
-import EnergyChart from '../componentes/EnergyChart.jsx';
-import EnergyStorage from '../componentes/EnergyStorage.jsx';
-import Navbar from '../componentes/Navbar';
+import EnergyChart from '../components/EnergyChart.jsx';
+import EnergyStorage from '../components/EnergyStorage.jsx';
+import Navbar from '../components/Navbar';
 import batteryData from '../data/batteryData.js';
 
 function Car() {
