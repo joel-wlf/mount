@@ -11,7 +11,15 @@ function News() {
     setHidden(state);
   }
 
-  const articleItems = newsData.map((article) => (
+  const localArticles = JSON.parse(localStorage.getItem('localArticles'));
+
+  if (localArticles) {
+    var articles = newsData.concat(localArticles);
+  } else if (!localArticles) {
+    var articles = newsData;
+  }
+
+  const articleItems = articles.map((article) => (
     <NewsItem key={article.title} handleScroll={setHidden} data={article} />
   ));
 

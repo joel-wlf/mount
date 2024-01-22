@@ -29,7 +29,11 @@ function NewsItem(props) {
         )}
       </AnimatePresence>
       <div className="article-image">
-        {props.data.type == "static" ? <img src={`news/${props.data.image}`} /> : <img src={`data:image/jpeg;base64,${props.data.image}`} />}
+        {props.data.type == 'static' ? (
+          <img src={`news/${props.data.image}`} />
+        ) : (
+          <img src={`data:image/jpeg;base64,${props.data.image}`} />
+        )}
       </div>
       <div className="article-info">
         <h4>{props.data.title}</h4>
