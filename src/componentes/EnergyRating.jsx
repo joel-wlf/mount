@@ -1,5 +1,5 @@
 import { Card } from '@geist-ui/core';
-import { CategoryBar, Flex, Text, Metric } from '@tremor/react';
+import { CategoryBar, Flex, Metric, Text } from '@tremor/react';
 
 function EnergyRating(props) {
   return (

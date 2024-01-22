@@ -1,7 +1,7 @@
 import { Button } from '@geist-ui/core';
 import { Menu } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import AppMenu from './AppMenu';
-import { useState, useEffect } from 'react';
 
 function Navbar({ toggleScroll }) {
   const [menuOpen, setMenuOpen] = useState(false);

@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
 import NewsModal from './NewsModal';
 
 function NewsItem(props) {
