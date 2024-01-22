@@ -92,6 +92,10 @@ nav {
   margin-bottom: 2em;
 }
 
+.news--actions button {
+  z-index: 0;
+}
+
 .news-article {
   transition: all 0.3s;
   width: 100%;
