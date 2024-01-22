@@ -1,7 +1,7 @@
 import { Button, useBodyScroll } from '@geist-ui/core';
 import { Plus, SlidersHorizontal } from 'lucide-react';
-import Navbar from '../componentes/Navbar';
-import NewsItem from '../componentes/NewsItem';
+import Navbar from '../components/Navbar';
+import NewsItem from '../components/NewsItem';
 import newsData from '../data/newsData';
 
 function News() {
