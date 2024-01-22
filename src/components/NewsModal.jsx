@@ -38,7 +38,7 @@ function NewsModal({ handleClose, data }) {
         >
           <X size={18} />
         </button>
-        <img src={`news/${data.image}`} />
+        {data.type == "static" ? <img src={`news/${data.image}`} /> : <img src={`data:image/jpeg;base64,${data.image}`} />}
         <div className="p-6">
           <h3 className='m-0'>{data.title}</h3>
           <p className='text-gray-500 m-0'>{`${data.date} | ${data.user}`}</p>
