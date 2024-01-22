@@ -1,15 +1,42 @@
+import { useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
+import NewsModal from './NewsModal';
+
 function NewsItem(props) {
-    return (
-        <div className="news-article">
-            <div className="article-image">
-                <img src={`news/${props.image}`} />
-            </div>
-            <div className="article-info">
-                <h4>{props.title}</h4>
-                <p>{props.subtitle}</p>
-            </div>
-        </div>
-    )
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+    props.handleScroll(true);
+  };
+  const closeModal = () => {
+    setModalOpen(false);
+    props.handleScroll(false);
+  };
+
+  return (
+    <div
+      className="news-article"
+      onClick={() => (modalOpen ? closeModal() : openModal())}
+    >
+      <AnimatePresence initial={false} mode="wait">
+        {modalOpen && (
+          <NewsModal
+            data={props.data}
+            modalOpen={modalOpen}
+            handleClose={closeModal}
+          />
+        )}
+      </AnimatePresence>
+      <div className="article-image">
+        <img src={`news/${props.data.image}`} />
+      </div>
+      <div className="article-info">
+        <h4>{props.data.title}</h4>
+        <p>{props.data.description}</p>
+      </div>
+    </div>
+  );
 }
 
-export default NewsItem
+export default NewsItem;
