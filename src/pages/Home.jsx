@@ -54,7 +54,7 @@ function Home() {
           index="date"
           minValue={150}
         />
-        <EnergyRating markerValue={40} values={[70, 80, 90, 100]} />
+        <EnergyRating markerValue={40} value={190} values={[50, 20, 20, 10]} />
       </div>
     </>
   );
