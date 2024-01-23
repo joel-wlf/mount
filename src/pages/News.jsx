@@ -1,5 +1,7 @@
 import { Button, useBodyScroll } from '@geist-ui/core';
 import { ArrowDown01, ArrowUp10, Plus } from 'lucide-react';
+import { AnimatePresence } from 'framer-motion';
+import PostModal from '../components/PostModal';
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import NewsItem from '../components/NewsItem';
@@ -13,6 +15,15 @@ function News() {
   const [localArticles, setLocalArticles] = useState(() =>
     JSON.parse(localStorage.getItem('localArticles'))
   );
+
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+  const closeModal = () => {
+    setModalOpen(false);
+  };
 
   function toggleScroll(state) {
     setHidden(state);
@@ -44,10 +55,20 @@ function News() {
   return (
     <>
       <Navbar toggleScroll={toggleScroll} />
+      <AnimatePresence initial={false} mode="wait">
+        {modalOpen && (
+          <PostModal modalOpen={modalOpen} handleClose={closeModal} />
+        )}
+      </AnimatePresence>
       <div className="content">
         <h2>News</h2>
         <div className="news--actions">
-          <Button width="78%" type="secondary" icon={<Plus />}>
+          <Button
+            width="78%"
+            type="secondary"
+            onClick={openModal}
+            icon={<Plus />}
+          >
             Post News
           </Button>
           <Button
