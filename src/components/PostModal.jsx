@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { X, Upload } from 'lucide-react';
+import { X, Upload, Check } from 'lucide-react';
 import { Input, Textarea, Button } from '@geist-ui/core';
 import Backdrop from './Backdrop';
 import { useState } from 'react';
@@ -64,7 +64,7 @@ function NewsModal({ handleClose, data }) {
             htmlFor="upload"
             className="flex items-center justify-center gap-6 w-full bg-black border-[1px] border-[#333] text-lightgray text-sm rounded-[6px] p-2"
           >
-            <Upload size={16} />
+            {formData.image ? <Check size={16} /> : <Upload size={16} />}
             Upload Image
           </label>
           <input
