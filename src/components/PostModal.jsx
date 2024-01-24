@@ -24,6 +24,18 @@ function NewsModal({ handleClose, data }) {
     },
   };
 
+  const [formData, setFormData] = useState({
+    title: '',
+    image: '',
+    body: '',
+  });
+
+  function handleChange(e) {
+    setFormData((prevState) => {
+      return { ...prevState, [e.target.name]: e.target.value };
+    });
+  }
+
   return (
     <Backdrop onClick={handleClose}>
       <motion.div
@@ -40,7 +52,14 @@ function NewsModal({ handleClose, data }) {
         ></button>
         <h3>Post News</h3>
         <div className="flex flex-col items-start justify-start h-[90%] gap-3">
-          <Input clearable width="100%" placeholder="Title" name="title" />
+          <Input
+            clearable
+            width="100%"
+            value={formData.title}
+            placeholder="Title"
+            name="title"
+            onChange={handleChange}
+          />
           <label
             htmlFor="upload"
             className="flex items-center justify-center gap-6 w-full bg-black border-[1px] border-[#333] text-lightgray text-sm rounded-[6px] p-2"
@@ -48,10 +67,20 @@ function NewsModal({ handleClose, data }) {
             <Upload size={16} />
             Upload Image
           </label>
-          <input id="upload" className="hidden" type="file" />
+          <input
+            value={formData.image}
+            id="upload"
+            name="image"
+            onChange={handleChange}
+            className="hidden"
+            type="file"
+          />
           <Textarea
             width="100%"
             height="70%"
+            value={formData.body}
+            name="body"
+            onChange={handleChange}
             placeholder="Please enter your news..."
           />
           <Button type="secondary">Post News</Button>
