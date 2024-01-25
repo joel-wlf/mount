@@ -12,8 +12,8 @@ function News() {
 
   const [order, setOrder] = useState('desc');
 
-  const [localArticles, setLocalArticles] = useState(() =>
-    JSON.parse(localStorage.getItem('localArticles'))
+  const [localArticles, setLocalArticles] = useState(
+    () => JSON.parse(localStorage.getItem('localArticles')) || []
   );
 
   const [modalOpen, setModalOpen] = useState(false);
@@ -21,6 +21,7 @@ function News() {
   const openModal = () => {
     setModalOpen(true);
   };
+
   const closeModal = () => {
     setModalOpen(false);
   };
@@ -33,11 +34,21 @@ function News() {
     order == 'desc' ? setOrder('asc') : setOrder('desc');
   }
 
+  function addArticle(data) {
+    setLocalArticles((prevState) => {
+      var articleArray = prevState.push(data);
+      return articleArray;
+    });
+    localStorage.setItem('localArticles', JSON.stringify(articleArray));
+    console.log(localArticles);
+  }
+
   if (localArticles) {
     var articles = newsData.concat(localArticles);
   } else if (!localArticles) {
     var articles = newsData;
   }
+  console.log(articles);
 
   const compareDates = (a, b) => {
     const dateA = new Date(a.date.split('.').reverse().join('-'));
@@ -46,7 +57,7 @@ function News() {
     return order == 'desc' ? dateB - dateA : dateA - dateB;
   };
 
-  articles.sort(compareDates);
+  // articles.sort(compareDates);
 
   const articleItems = articles.map((article) => (
     <NewsItem key={article.title} handleScroll={setHidden} data={article} />
@@ -57,7 +68,11 @@ function News() {
       <Navbar toggleScroll={toggleScroll} />
       <AnimatePresence initial={false} mode="wait">
         {modalOpen && (
-          <PostModal modalOpen={modalOpen} handleClose={closeModal} />
+          <PostModal
+            addArticle={addArticle}
+            modalOpen={modalOpen}
+            handleClose={closeModal}
+          />
         )}
       </AnimatePresence>
       <div className="content">
