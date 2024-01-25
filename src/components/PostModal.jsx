@@ -1,9 +1,8 @@
+import { Button, Input, Textarea } from '@geist-ui/core';
 import { motion } from 'framer-motion';
-import { X, Upload, Check } from 'lucide-react';
-import { Input, Textarea, Button } from '@geist-ui/core';
-import Backdrop from './Backdrop';
+import { Check, Upload, X } from 'lucide-react';
 import { useState } from 'react';
-import imageToBase64 from 'image-to-base64/browser';
+import Backdrop from './Backdrop';
 
 function NewsModal({ handleClose, addArticle }) {
   const slideIn = {
