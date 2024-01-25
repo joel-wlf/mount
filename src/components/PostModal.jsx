@@ -38,7 +38,7 @@ function NewsModal({ handleClose, addArticle }) {
 
   function handleSubmit() {
     addArticle({
-      title: 'Erntebericht 2028',
+      title: 'test 2028',
       description:
         'Der Erntebericht für 2028 ist veröffentlicht und kann aufgerufen werden ...',
       image: 'agrar.jpg',

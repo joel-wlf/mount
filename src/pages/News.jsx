@@ -36,10 +36,10 @@ function News() {
 
   function addArticle(data) {
     setLocalArticles((prevState) => {
-      var articleArray = prevState.push(data);
+      var articleArray = [...prevState, data];
       return articleArray;
     });
-    localStorage.setItem('localArticles', JSON.stringify(articleArray));
+    //localStorage.setItem('localArticles', JSON.stringify(articleArray));
     console.log(localArticles);
   }
 
@@ -57,7 +57,7 @@ function News() {
     return order == 'desc' ? dateB - dateA : dateA - dateB;
   };
 
-  // articles.sort(compareDates);
+  articles.sort(compareDates);
 
   const articleItems = articles.map((article) => (
     <NewsItem key={article.title} handleScroll={setHidden} data={article} />
