@@ -32,7 +32,7 @@ function NewsItem(props) {
         {props.data.type == 'static' ? (
           <img src={`news/${props.data.image}`} />
         ) : (
-          <img src={`data:image/jpeg;base64,${props.data.image}`} />
+          <img src={props.data.image} />
         )}
       </div>
       <div className="article-info">

@@ -93,7 +93,7 @@ nav {
 }
 
 .news--actions button {
-  z-index: 0;
+  z-index: 1;
 }
 
 .news-article {
