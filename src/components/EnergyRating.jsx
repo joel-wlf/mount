@@ -9,11 +9,12 @@ function EnergyRating(props) {
         alignItems="center"
         className="truncate space-x-3"
       >
-        <Metric className="m-3">{`${props.markerValue}L`}</Metric>
+        <Metric className="m-3">{`${props.value} L`}</Metric>
         <Text>today</Text>
       </Flex>
       <CategoryBar
         values={props.values}
+        showLabels={false}
         colors={['emerald', 'yellow', 'orange', 'rose']}
         markerValue={props.markerValue}
         className="mt-3"
