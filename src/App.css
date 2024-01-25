@@ -139,6 +139,7 @@ nav {
 
 .article-image {
   object-fit: fill;
+  height: 22vh;
 }
 
 .article-image img {
