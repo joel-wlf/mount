@@ -103,6 +103,12 @@ function NewsModal({ handleClose, addArticle }) {
           onClick={handleClose}
         ></button>
         <h3>Post News</h3>
+        <button
+          className="absolute top-0 right-0 p-1 m-3 bg-[rgba(31,31,31,0.69)] aspect-square rounded-full backdrop-blur-lg"
+          onClick={handleClose}
+        >
+          <X size={18} />
+        </button>
         <div className="flex flex-col items-start justify-start h-[90%] gap-3">
           <Input
             clearable
