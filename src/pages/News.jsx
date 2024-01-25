@@ -35,12 +35,9 @@ function News() {
   }
 
   function addArticle(data) {
-    setLocalArticles((prevState) => {
-      var articleArray = [...prevState, data];
-      return articleArray;
-    });
-    //localStorage.setItem('localArticles', JSON.stringify(articleArray));
-    console.log(localArticles);
+    var articleArray = [...localArticles, data];
+    setLocalArticles(articleArray);
+    localStorage.setItem('localArticles', JSON.stringify(articleArray));
   }
 
   if (localArticles) {
@@ -48,7 +45,6 @@ function News() {
   } else if (!localArticles) {
     var articles = newsData;
   }
-  console.log(articles);
 
   const compareDates = (a, b) => {
     const dateA = new Date(a.date.split('.').reverse().join('-'));
