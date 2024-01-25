@@ -41,7 +41,7 @@ function NewsModal({ handleClose, data }) {
         {data.type == 'static' ? (
           <img src={`news/${data.image}`} />
         ) : (
-          <img src={`data:image/jpeg;base64,${data.image}`} />
+          <img src={data.image} />
         )}
         <div className="p-6">
           <h3 className="m-0">{data.title}</h3>

@@ -27,6 +27,7 @@ function NewsModal({ handleClose, addArticle }) {
 
   const [formData, setFormData] = useState({
     title: '',
+    description: '',
     image: '',
     body: '',
   });
@@ -48,6 +49,15 @@ function NewsModal({ handleClose, addArticle }) {
     });
   }
 
+  function getCurrentDate() {
+    const today = new Date();
+    const day = today.getDate().toString().padStart(2, '0');
+    const month = (today.getMonth() + 1).toString().padStart(2, '0'); // Month is zero-based
+    const year = 2029;
+
+    return `${day}.${month}.${year}`;
+  }
+
   function handleChange(e) {
     if (e.target.name == 'image') {
       setFormData((prevState) => {
@@ -65,10 +75,9 @@ function NewsModal({ handleClose, addArticle }) {
       const base64Image = await getBase64Image(formData.image);
       addArticle({
         title: formData.title,
-        description:
-          'Der Erntebericht für 2028 ist veröffentlicht und kann aufgerufen werden ...',
+        description: formData.description,
         image: base64Image,
-        date: '08.12.2028',
+        date: getCurrentDate(),
         user: 'Joel Wolf',
         type: 'local',
         body: formData.body,
@@ -98,9 +107,19 @@ function NewsModal({ handleClose, addArticle }) {
           <Input
             clearable
             width="100%"
+            maxLength={20}
             value={formData.title}
             placeholder="Title"
             name="title"
+            onChange={handleChange}
+          />
+          <Input
+            clearable
+            width="100%"
+            maxLength={60}
+            value={formData.description}
+            placeholder="Enter a short description..."
+            name="description"
             onChange={handleChange}
           />
           <label
@@ -120,7 +139,7 @@ function NewsModal({ handleClose, addArticle }) {
           />
           <Textarea
             width="100%"
-            height="70%"
+            height="60%"
             value={formData.body}
             name="body"
             onChange={handleChange}
