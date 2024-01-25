@@ -93,7 +93,7 @@ nav {
 }
 
 .news--actions button {
-  z-index: 0;
+  z-index: 1;
 }
 
 .news-article {
@@ -139,6 +139,7 @@ nav {
 
 .article-image {
   object-fit: fill;
+  height: 22vh;
 }
 
 .article-image img {

@@ -28,7 +28,7 @@ function Home() {
         />
         <EnergyCounter
           title="Electricity"
-          metric="20 kWh"
+          metric="611 kWh"
           delta="30.5%"
           deltaType="moderateDecrease"
         />
@@ -43,7 +43,7 @@ function Home() {
         <EnergyStorage
           title="Wood Pellets"
           subtitle="in Storage"
-          progress={73}
+          progress={29}
           color="yellow"
         />
         <EnergyChart
@@ -54,7 +54,7 @@ function Home() {
           index="date"
           minValue={150}
         />
-        <EnergyRating markerValue={50} values={[40, 30, 20, 10]} />
+        <EnergyRating markerValue={40} value={190} values={[50, 20, 20, 10]} />
       </div>
     </>
   );
