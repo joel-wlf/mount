@@ -12,9 +12,7 @@ function News() {
 
   const [order, setOrder] = useState('desc');
 
-  const [localArticles, setLocalArticles] = useState(
-    () => JSON.parse(localStorage.getItem('localArticles')) || []
-  );
+  const [localArticles, setLocalArticles] = useState([]);
 
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -37,7 +35,6 @@ function News() {
   function addArticle(data) {
     var articleArray = [...localArticles, data];
     setLocalArticles(articleArray);
-    localStorage.setItem('localArticles', JSON.stringify(articleArray));
   }
 
   if (localArticles) {

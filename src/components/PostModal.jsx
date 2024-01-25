@@ -3,6 +3,7 @@ import { X, Upload, Check } from 'lucide-react';
 import { Input, Textarea, Button } from '@geist-ui/core';
 import Backdrop from './Backdrop';
 import { useState } from 'react';
+import imageToBase64 from 'image-to-base64/browser';
 
 function NewsModal({ handleClose, addArticle }) {
   const slideIn = {
@@ -31,35 +32,51 @@ function NewsModal({ handleClose, addArticle }) {
   });
 
   function getBase64Image(img) {
-    var canvas = document.createElement('canvas');
-    canvas.width = img.width;
-    canvas.height = img.height;
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
 
-    var ctx = canvas.getContext('2d');
-    ctx.drawImage(img, 0, 0);
+      reader.onloadend = () => {
+        const base64String = reader.result;
+        resolve(base64String);
+      };
 
-    var dataURL = canvas.toDataURL('image/png');
+      reader.onerror = (error) => {
+        reject(error);
+      };
 
-    return dataURL.replace(/^data:image\/(png|jpg);base64,/, '');
+      reader.readAsDataURL(img);
+    });
   }
 
   function handleChange(e) {
-    setFormData((prevState) => {
-      return { ...prevState, [e.target.name]: e.target.value };
-    });
+    if (e.target.name == 'image') {
+      setFormData((prevState) => {
+        return { ...prevState, [e.target.name]: e.target.files[0] };
+      });
+    } else {
+      setFormData((prevState) => {
+        return { ...prevState, [e.target.name]: e.target.value };
+      });
+    }
   }
 
-  function handleSubmit() {
-    addArticle({
-      title: formData.title,
-      description:
-        'Der Erntebericht für 2028 ist veröffentlicht und kann aufgerufen werden ...',
-      image: 'agrar.jpg',
-      date: '08.12.2028',
-      user: 'Joel Wolf',
-      type: 'static',
-      body: formData.body,
-    });
+  async function handleSubmit() {
+    try {
+      const base64Image = await getBase64Image(formData.image);
+      addArticle({
+        title: formData.title,
+        description:
+          'Der Erntebericht für 2028 ist veröffentlicht und kann aufgerufen werden ...',
+        image: base64Image,
+        date: '08.12.2028',
+        user: 'Joel Wolf',
+        type: 'local',
+        body: formData.body,
+      });
+      handleClose();
+    } catch (error) {
+      console.error('Error converting image to base64:', error);
+    }
   }
 
   return (
@@ -94,7 +111,6 @@ function NewsModal({ handleClose, addArticle }) {
             Upload Image
           </label>
           <input
-            value={formData.image}
             id="upload"
             name="image"
             accept="image/*"
