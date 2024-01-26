@@ -35,19 +35,17 @@ function EnergyStorage(props) {
   }
 
   return (
-    <div className="flex items-center justify-center w-full p-3">
-      <div className="group flex items-center justify-center flex-col w-[90%] p-5 border-[1px] border-[#333] hover:border-[#555] duration-300 rounded-[10px]">
-        <Icon />
-        <h3 className="group-hover:-translate-y-1 text-center group-hover:scale-110 transition-all">
-          {props.title}
-        </h3>
-        <Button margin="0.25em">{props.buttonText[0]}</Button>
-        {props.buttonText[1] && (
-          <Button margin="0.25em" type="secondary">
-            {props.buttonText[1]}
-          </Button>
-        )}
-      </div>
+    <div className="group flex items-center justify-center flex-col my-5 w-full p-5 border-[1px] border-[#333] hover:border-[#555] duration-300 rounded-[10px]">
+      <Icon />
+      <h3 className="group-hover:-translate-y-1 text-center group-hover:scale-110 transition-all">
+        {props.title}
+      </h3>
+      <Button margin="0.25em">{props.buttonText[0]}</Button>
+      {props.buttonText[1] && (
+        <Button margin="0.25em" type="secondary">
+          {props.buttonText[1]}
+        </Button>
+      )}
     </div>
   );
 }
