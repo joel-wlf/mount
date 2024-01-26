@@ -4,8 +4,9 @@ import Car from './pages/Car';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
 import News from './pages/News';
-import Services from './pages/Services';
-
+import ServiceMenu from './pages/services/ServiceMenu';
+import ShareRide from './pages/services/ShareRide';
+import ShareYourRide from './pages/services/ShareYourRide';
 
 function App() {
   return (
@@ -16,7 +17,13 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/home" element={<Home />} />
           <Route path="/car" element={<Car />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/services" element={<ServiceMenu />}>
+            <Route path="/services/share-ride" element={<ShareRide />} />
+            <Route
+              path="/services/share-your-ride"
+              element={<ShareYourRide />}
+            />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>
