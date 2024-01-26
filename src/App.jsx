@@ -14,15 +14,13 @@ function App() {
       <Routes>
         <Route path="/">
           <Route index element={<Dashboard />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/car" element={<Car />} />
-          <Route path="/services" element={<ServiceMenu />}>
-            <Route path="/services/share-ride" element={<ShareRide />} />
-            <Route
-              path="/services/share-your-ride"
-              element={<ShareYourRide />}
-            />
+          <Route path="news" element={<News />} />
+          <Route path="home" element={<Home />} />
+          <Route path="car" element={<Car />} />
+          <Route path="services">
+            <Route index element={<ServiceMenu />} />
+            <Route path="share-ride" element={<ShareRide />} />
+            <Route path="share-your-ride" element={<ShareYourRide />} />
           </Route>
         </Route>
       </Routes>

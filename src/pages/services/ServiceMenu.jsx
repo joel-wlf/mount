@@ -37,7 +37,7 @@ function ServiceMenu() {
         <ServiceItem
           title="Ride Share"
           icon="CarTaxiFront"
-          routes={['/services/share-ride']}
+          routes={['share-ride', 'share-your-ride']}
           buttonText={['Discover drivers', 'Share your Ride']}
         />
         <ServiceItem

@@ -1,7 +1,10 @@
 import { Button } from '@geist-ui/core';
 import { CarTaxiFront, Package, CalendarClock, Utensils } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 function EnergyStorage(props) {
+  const navigate = useNavigate();
+
   function Icon() {
     if (props.icon == 'CarTaxiFront') {
       return (
@@ -40,9 +43,18 @@ function EnergyStorage(props) {
       <h3 className="group-hover:-translate-y-1 text-center group-hover:scale-110 transition-all">
         {props.title}
       </h3>
-      <Button margin="0.25em">{props.buttonText[0]}</Button>
+      <Button
+        onClick={() => navigate('/services/' + props.routes[0])}
+        margin="0.25em"
+      >
+        {props.buttonText[0]}
+      </Button>
       {props.buttonText[1] && (
-        <Button margin="0.25em" type="secondary">
+        <Button
+          onClick={() => navigate('/services/' + props.routes[1])}
+          margin="0.25em"
+          type="secondary"
+        >
           {props.buttonText[1]}
         </Button>
       )}
