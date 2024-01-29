@@ -77,7 +77,10 @@ function ShareRide() {
           <p className="text-gray-500 mt-0">
             Available Drivers going in direction of "{formData.destination}":
           </p>
-          <PersonCard />
+          <PersonCard name="Anton" byYou="16:32" arrival="16:52" price="14" />
+          <PersonCard name="Anton" byYou="16:32" arrival="16:52" price="14" />
+          <PersonCard name="Anton" byYou="16:32" arrival="16:52" price="14" />
+          <PersonCard name="Anton" byYou="16:32" arrival="16:52" price="14" />
         </div>
       </div>
     </>
