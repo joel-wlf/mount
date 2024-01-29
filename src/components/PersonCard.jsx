@@ -1,9 +1,16 @@
 import { User, Flag, CarTaxiFront, BadgeEuro } from 'lucide-react';
 
 function PersonCard(props) {
+  function handleClick() {
+    let currentAmount = localStorage.getItem('euroCoins');
+    let newAmount = currentAmount - props.price;
+    localStorage.setItem('euroCoins', newAmount);
+    props.next();
+  }
+
   return (
     <div
-      onClick={props.next}
+      onClick={handleClick}
       className="flex items-center justify-start flex-row border-[1px] border-[#333] rounded-[10px] w-full my-3 p-4"
     >
       <User size={45} />
