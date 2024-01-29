@@ -1,46 +1,26 @@
-import { AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
-import NewsModal from './NewsModal';
+import { User, Flag, CarTaxiFront, BadgeEuro } from 'lucide-react';
 
-function NewsItem(props) {
-  const [modalOpen, setModalOpen] = useState(false);
-
-  const openModal = () => {
-    setModalOpen(true);
-    props.handleScroll(true);
-  };
-  const closeModal = () => {
-    setModalOpen(false);
-    props.handleScroll(false);
-  };
-
+function PersonCard(props) {
   return (
-    <div
-      className="news-article"
-      onClick={() => (modalOpen ? closeModal() : openModal())}
-    >
-      <AnimatePresence initial={false} mode="wait">
-        {modalOpen && (
-          <NewsModal
-            data={props.data}
-            modalOpen={modalOpen}
-            handleClose={closeModal}
-          />
-        )}
-      </AnimatePresence>
-      <div className="article-image">
-        {props.data.type == 'static' ? (
-          <img src={`news/${props.data.image}`} />
-        ) : (
-          <img src={props.data.image} />
-        )}
-      </div>
-      <div className="article-info">
-        <h4>{props.data.title}</h4>
-        <p>{props.data.description}</p>
+    <div className="flex items-center justify-start flex-row border-[1px] border-[#333] rounded-[10px] w-full p-4">
+      <User size={45} />
+      <div className="w-full h-full grid grid-cols-2 grid-rows-2 ml-4">
+        <h4 className="m-0">Anton</h4>
+        <div className="flex items-center justify-start gap-3">
+          <CarTaxiFront size={20} />
+          16:30
+        </div>
+        <div className="flex items-center justify-start gap-3">
+          <BadgeEuro size={20} />
+          14
+        </div>
+        <div className="flex items-center justify-start gap-3">
+          <Flag size={20} />
+          16:30
+        </div>
       </div>
     </div>
   );
 }
 
-export default NewsItem;
+export default PersonCard;

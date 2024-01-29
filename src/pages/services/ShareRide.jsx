@@ -2,6 +2,7 @@ import { Button, Input, useBodyScroll } from '@geist-ui/core';
 import { MapPinned } from 'lucide-react';
 import { useState } from 'react';
 import Navbar from '../../components/Navbar';
+import PersonCard from '../../components/PersonCard';
 
 function ShareRide() {
   const [hidden, setHidden] = useBodyScroll();
@@ -76,6 +77,7 @@ function ShareRide() {
           <p className="text-gray-500 mt-0">
             Available Drivers going in direction of "{formData.destination}":
           </p>
+          <PersonCard />
         </div>
       </div>
     </>
