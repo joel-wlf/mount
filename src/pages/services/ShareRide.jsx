@@ -1,6 +1,8 @@
 import { Button, Input, useBodyScroll } from '@geist-ui/core';
-import { MapPinned } from 'lucide-react';
+import gpc from 'generate-pincode';
+import { BadgeCheck, MapPinned } from 'lucide-react';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import PersonCard from '../../components/PersonCard';
 
@@ -10,6 +12,8 @@ function ShareRide() {
   const [formData, setFormData] = useState({
     destination: '',
   });
+
+  const navigate = useNavigate();
 
   const [step, setStep] = useState(1);
 
@@ -73,7 +77,7 @@ function ShareRide() {
             Search drivers
           </Button>
         </div>
-        <div className={`${step != 2 && 'hidden'} `}>
+        <div className={`${step != 2 && 'hidden'}`}>
           <p className="text-gray-500 mt-0">
             Available Drivers going in direction of "{formData.destination}":
           </p>
@@ -105,6 +109,24 @@ function ShareRide() {
             arrival="16:52"
             price="14"
           />
+        </div>
+        <div
+          className={`${
+            step != 3 && 'hidden'
+          } flex items-center justify-center flex-col w-full h-[70vh]`}
+        >
+          <BadgeCheck size={120} />
+          <h2 className="tracking-widest text-6xl mt-5">{gpc(6)}</h2>
+          <p className="leading-4 text-gray-400 text-center">
+            Please provide this code to your driver.
+          </p>
+          <Button
+            onClick={() => navigate('/services')}
+            marginTop="2vh"
+            type="secondary"
+          >
+            All set!
+          </Button>
         </div>
       </div>
     </>
