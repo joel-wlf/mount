@@ -46,4 +46,13 @@ export default [
     type: 'static',
     body: 'Liebe Dorfgemeinschaft, auch dieses Jahr wollen wir zugunsten unseres 3 Jährigen Bestehens ein großangelegtes Dorffest feiern. Ob groß oder klein, jeder ist eingeladen und für Speiß und Trank ist natürlich auch gesorgt. Das Dorffest wird nächste Woche Samstag ab 14:00 stattfinden. Alle sind herzlich eingeladen. Wer sich an den Vorbereitungen zum Dorffest beteiligen will oder noch Vorschläge einbringen will melde sich bitte beim Dorfvorstand. Wir bräuchten noch Hilfe bei den Vorbereitungen der Kinderspiele und bei dem Aufbau der Stände. Euer Dorfvorstand'
   },
+  {
+    title: 'Zuschüsse',
+    description: 'Die Zuschüsse des EU-Parlamentes wurden genehmigt',
+    image: 'eu-parlament.jpg',
+    date: '15.12.2028',
+    user: 'Dorfvorstand',
+    type: 'static',
+    body: 'Wir wollen euch hiermit mit Freuden mitteilen, dass die erneuten Zuschüsse für unser smartes Dorf genehmigt worden sind. Somit haben wir Zugriff auf weitere 150 Tausend Euro mit denen wir unser Straßennetz auf den neusten Stand upgraden  können und somit weiter zu unserem Ziel „150% Klimafreundlich“ zu kommen. Des weiteren wollen wir mit dem Geld unsere Schule auf den neusten Stand bringen und somit den Kindern eine umweltbewusste Erziehung ermöglichen können. Außerdem könnt Ihr bei der nächsten Dorfversammlung noch weitere Vorschläge einbringen, wofür wir das Geld noch verwenden können.Viele Grüße Der Dorfvorstand',
+  },
 ];
