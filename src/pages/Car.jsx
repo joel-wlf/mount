@@ -27,7 +27,7 @@ function Car() {
         <EnergyStorage
           title="Battery usage"
           subtitle="in Battery"
-          progress={73}
+          progress={51}
           color="green"
         />
       </div>
