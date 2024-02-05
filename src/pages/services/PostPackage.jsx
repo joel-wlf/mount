@@ -1,10 +1,9 @@
-import { Button, Input, Textarea, useBodyScroll } from '@geist-ui/core';
+import { Button, Textarea, useBodyScroll } from '@geist-ui/core';
 import gpc from 'generate-pincode';
-import { Milestone, BadgeCheck } from 'lucide-react';
+import { BadgeCheck, Milestone, BadgeEuro } from 'lucide-react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
-import PersonCard from '../../components/PersonCard';
 
 function PostPackage() {
   const [hidden, setHidden] = useBodyScroll();
@@ -13,15 +12,25 @@ function PostPackage() {
 
   const [step, setStep] = useState(1);
 
+  const [formData, setFormData] = useState({
+    destination: '',
+  });
+
   function toggleScroll(state) {
     setHidden(state);
+  }
+
+  function handleChange(e) {
+    setFormData((prevState) => {
+      return { ...prevState, [e.target.name]: e.target.value };
+    });
   }
 
   return (
     <>
       <Navbar toggleScroll={toggleScroll} />
       <div className="content h-full">
-        <h2 className="m-0">Send your Package</h2>
+        <h2 className="m-0 leading-9">Send your Package</h2>
         <div
           className={`${
             step != 1 && 'hidden'
@@ -30,10 +39,22 @@ function PostPackage() {
           <Milestone size={120} />
           <Textarea
             width="100%"
+            height="15vh"
             name="destination"
+            onChange={handleChange}
             placeholder="Pick destination..."
           />
-          <Button type="secondary">Post Package</Button>
+          <div className="flex items-center justify-center gap-2 m-0">
+            <BadgeEuro />
+            <p className="m-0">21 EuroCoins</p>
+          </div>
+          <Button
+            disabled={formData.destination == ''}
+            type="secondary"
+            onClick={() => setStep(2)}
+          >
+            Post Package
+          </Button>
         </div>
         <div
           className={`${
@@ -43,7 +64,8 @@ function PostPackage() {
           <BadgeCheck size={120} />
           <h2 className="tracking-widest text-6xl mt-5">{gpc(6)}</h2>
           <p className="leading-4 text-gray-400 text-center">
-            Please put this code anywhere on your Package
+            Please put this code anywhere on your Package and place it in a
+            visible spot in you front yard.
           </p>
           <Button
             onClick={() => navigate('/services')}
