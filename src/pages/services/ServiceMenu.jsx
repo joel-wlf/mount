@@ -43,6 +43,7 @@ function ServiceMenu() {
         <ServiceItem
           title="Package pickup"
           icon="Package"
+          routes={['post-package', 'share-your-ride']}
           buttonText={['Send package', 'Deliver package']}
         />
         <Divider className="z-0">Corporate</Divider>
