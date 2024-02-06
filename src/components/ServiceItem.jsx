@@ -57,6 +57,7 @@ function EnergyStorage(props) {
         {props.title}
       </h3>
       <Button
+        disabled={props.disabled}
         onClick={() => navigate('/services/' + props.routes[0])}
         margin="0.25em"
       >
@@ -64,6 +65,7 @@ function EnergyStorage(props) {
       </Button>
       {props.buttonText[1] && (
         <Button
+          disabled={props.disabled}
           onClick={() => navigate('/services/' + props.routes[1])}
           margin="0.25em"
           type="secondary"
