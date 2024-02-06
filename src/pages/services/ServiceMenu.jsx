@@ -36,15 +36,24 @@ function ServiceMenu() {
         <Divider className="z-0" />
         <ServiceItem
           title="Ride Share"
+          disabled={false}
           icon="CarTaxiFront"
           routes={['share-ride', 'share-your-ride']}
           buttonText={['Discover drivers', 'Share your Ride']}
         />
         <ServiceItem
           title="Package pickup"
+          disabled={false}
           icon="Package"
           routes={['post-package', 'pickup-package']}
           buttonText={['Send package', 'Pickup package']}
+        />
+        <ServiceItem
+          title="Car Rent"
+          disabled={true}
+          icon="ParkingSquare"
+          routes={['rent-car', 'rentout-your-car']}
+          buttonText={['Rent a Car', 'Temporary ']}
         />
       </div>
     </>

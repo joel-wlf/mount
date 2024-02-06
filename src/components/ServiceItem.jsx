@@ -1,5 +1,11 @@
 import { Button } from '@geist-ui/core';
-import { CarTaxiFront, Package, CalendarClock, Utensils } from 'lucide-react';
+import {
+  CarTaxiFront,
+  Package,
+  CalendarClock,
+  Utensils,
+  ParkingSquare,
+} from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 function EnergyStorage(props) {
@@ -34,6 +40,13 @@ function EnergyStorage(props) {
           size={52}
         />
       );
+    } else if (props.icon == 'ParkingSquare') {
+      return (
+        <ParkingSquare
+          className="group-hover:-translate-y-1 group-hover:scale-75 transition-all"
+          size={52}
+        />
+      );
     }
   }
 
@@ -44,6 +57,7 @@ function EnergyStorage(props) {
         {props.title}
       </h3>
       <Button
+        disabled={props.disabled}
         onClick={() => navigate('/services/' + props.routes[0])}
         margin="0.25em"
       >
@@ -51,6 +65,7 @@ function EnergyStorage(props) {
       </Button>
       {props.buttonText[1] && (
         <Button
+          disabled={props.disabled}
           onClick={() => navigate('/services/' + props.routes[1])}
           margin="0.25em"
           type="secondary"
