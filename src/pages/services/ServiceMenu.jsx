@@ -43,8 +43,8 @@ function ServiceMenu() {
         <ServiceItem
           title="Package pickup"
           icon="Package"
-          routes={['post-package', 'share-your-ride']}
-          buttonText={['Send package', 'Deliver package']}
+          routes={['post-package', 'pickup-package']}
+          buttonText={['Send package', 'Pickup package']}
         />
       </div>
     </>
