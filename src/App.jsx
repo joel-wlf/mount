@@ -7,6 +7,8 @@ import News from './pages/News';
 import ServiceMenu from './pages/services/ServiceMenu';
 import ShareRide from './pages/services/ShareRide';
 import ShareYourRide from './pages/services/ShareYourRide';
+import PostPackage from './pages/services/PostPackage';
+import PickupPackage from './pages/services/PickupPackage';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
             <Route index element={<ServiceMenu />} />
             <Route path="share-ride" element={<ShareRide />} />
             <Route path="share-your-ride" element={<ShareYourRide />} />
+            <Route path="post-package" element={<PostPackage />} />
+            <Route path="pickup-package" element={<PickupPackage />} />
           </Route>
         </Route>
       </Routes>

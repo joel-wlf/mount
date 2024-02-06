@@ -13,6 +13,7 @@
     "@geist-ui/core": "^2.3.8",
     "@tremor/react": "^3.13.1",
     "framer-motion": "^10.18.0",
+    "generate-pincode": "^6.0.0",
     "lucide-react": "^0.300.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
