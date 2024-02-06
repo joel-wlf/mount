@@ -64,7 +64,12 @@ function PickupPackage() {
             width="75%"
           />
           <div className="flex items-center justify-center gap-5 flex-row w-full">
-            <Button ghost width="40%" type="error">
+            <Button
+              ghost
+              width="40%"
+              type="error"
+              onClick={() => navigate('/services')}
+            >
               Cancel
             </Button>
             <Button ghost width="40%" type="success" onClick={() => setStep(3)}>
