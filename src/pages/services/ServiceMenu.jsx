@@ -46,6 +46,12 @@ function ServiceMenu() {
           routes={['post-package', 'pickup-package']}
           buttonText={['Send package', 'Pickup package']}
         />
+        <ServiceItem
+          title="Car Rent"
+          icon="ParkingSquare"
+          routes={['rent-car', 'rentout-your-car']}
+          buttonText={['Rent a Car', 'Rentout your Car']}
+        />
       </div>
     </>
   );
