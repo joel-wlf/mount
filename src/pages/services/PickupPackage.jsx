@@ -1,6 +1,5 @@
-import { Button, Input, useBodyScroll } from '@geist-ui/core';
-import gpc from 'generate-pincode';
-import { BadgeCheck, Milestone, BadgeEuro } from 'lucide-react';
+import { Button, Input, Snippet, useBodyScroll } from '@geist-ui/core';
+import { ScanSearch, BadgeCheck, Milestone, BadgeEuro } from 'lucide-react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
@@ -36,36 +35,52 @@ function PickupPackage() {
             step != 1 && 'hidden'
           } flex items-center justify-center gap-5 flex-col w-full h-[60vh] px-10`}
         >
-          <Milestone size={120} />
+          <ScanSearch size={120} />
           <Input
             width="100%"
-            type="number"
+            htmlType="number"
             name="code"
+            maxLength={6}
             onChange={handleChange}
-            placeholder="Package Code"
+            placeholder="Enter Package Code..."
           />
-          <div className="flex items-center justify-center gap-2 m-0">
-            <BadgeEuro />
-            <p className="m-0">21 EuroCoins</p>
-          </div>
           <Button
-            disabled={formData.code == ''}
+            disabled={formData.code.length < 6}
             type="secondary"
             onClick={() => setStep(2)}
           >
-            Post Package
+            Lookup Code
           </Button>
         </div>
         <div
           className={`${
             step != 2 && 'hidden'
+          } flex items-center justify-center gap-5 flex-col w-full h-[70vh]`}
+        >
+          <Milestone size={120} />
+          <Snippet
+            text={['Bauernstraße 17', '10245 Berlin']}
+            symbol=""
+            width="75%"
+          />
+          <div className="flex items-center justify-center gap-5 flex-row w-full">
+            <Button ghost width="40%" type="error">
+              Cancel
+            </Button>
+            <Button ghost width="40%" type="success" onClick={() => setStep(3)}>
+              Accept
+            </Button>
+          </div>
+        </div>
+        <div
+          className={`${
+            step != 3 && 'hidden'
           } flex items-center justify-center flex-col w-full h-[70vh]`}
         >
-          <BadgeCheck size={120} />
-          <h2 className="tracking-widest text-6xl mt-5">{gpc(6)}</h2>
+          <BadgeEuro size={120} />
           <p className="leading-4 text-gray-400 text-center">
-            Please put this code anywhere on your Package and place it in a
-            visible spot in you front yard.
+            21 EuroCoins will be deposited into your account once the package is
+            received.
           </p>
           <Button
             onClick={() => navigate('/services')}
