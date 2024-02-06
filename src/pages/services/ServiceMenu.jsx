@@ -33,7 +33,7 @@ function ServiceMenu() {
             Send Coins
           </Button>
         </div>
-        <Divider className="z-0" />
+        <Divider className="z-0">Community</Divider>
         <ServiceItem
           title="Ride Share"
           icon="CarTaxiFront"
@@ -43,8 +43,18 @@ function ServiceMenu() {
         <ServiceItem
           title="Package pickup"
           icon="Package"
-          routes={['post-package', 'pickup-package']}
-          buttonText={['Send package', 'Pickup package']}
+          buttonText={['Send package', 'Deliver package']}
+        />
+        <Divider className="z-0">Corporate</Divider>
+        <ServiceItem
+          title="Event Planning"
+          icon="CalendarClock"
+          buttonText={['Book Event']}
+        />
+        <ServiceItem
+          title="Restaurant"
+          icon="Utensils"
+          buttonText={['Reserve Table']}
         />
       </div>
     </>
