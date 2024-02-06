@@ -4,6 +4,11 @@ import Car from './pages/Car';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
 import News from './pages/News';
+import ServiceMenu from './pages/services/ServiceMenu';
+import ShareRide from './pages/services/ShareRide';
+import ShareYourRide from './pages/services/ShareYourRide';
+import PostPackage from './pages/services/PostPackage';
+import PickupPackage from './pages/services/PickupPackage';
 
 function App() {
   return (
@@ -11,9 +16,16 @@ function App() {
       <Routes>
         <Route path="/">
           <Route index element={<Dashboard />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/car" element={<Car />} />
+          <Route path="news" element={<News />} />
+          <Route path="home" element={<Home />} />
+          <Route path="car" element={<Car />} />
+          <Route path="services">
+            <Route index element={<ServiceMenu />} />
+            <Route path="share-ride" element={<ShareRide />} />
+            <Route path="share-your-ride" element={<ShareYourRide />} />
+            <Route path="post-package" element={<PostPackage />} />
+            <Route path="pickup-package" element={<PickupPackage />} />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>
