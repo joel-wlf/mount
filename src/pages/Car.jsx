@@ -1,6 +1,8 @@
 import { useBodyScroll } from '@geist-ui/core';
+import { Radio } from 'lucide-react';
 import EnergyChart from '../components/EnergyChart.jsx';
 import EnergyStorage from '../components/EnergyStorage.jsx';
+import FeatureCard from '../components/FeatureCard.jsx';
 import Navbar from '../components/Navbar';
 import batteryData from '../data/batteryData.js';
 
@@ -29,6 +31,11 @@ function Car() {
           subtitle="in Battery"
           progress={51}
           color="green"
+        />
+        <FeatureCard
+          icon={<Radio size={45} />}
+          title="Wireless Charging"
+          initial={true}
         />
       </div>
     </>
