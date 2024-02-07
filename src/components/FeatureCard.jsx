@@ -8,7 +8,7 @@ function PersonCard(props) {
   return (
     <div
       onClick={() => setToggle((prevState) => !prevState)}
-      className="flex items-center justify-start flex-row border-[1px] border-[#333] rounded-[10px] w-full p-5"
+      className="flex items-center justify-start flex-row border-[1px] border-[#333] rounded-[10px] w-full my-3 p-5"
     >
       <div className="pr-5">{props.icon}</div>
       <div className="mr-auto">
