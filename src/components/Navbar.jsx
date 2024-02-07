@@ -17,7 +17,7 @@ function Navbar({ toggleScroll }) {
   return !menuOpen ? (
     <nav className="nav--normal">
       <img
-        src="icon.png"
+        src="../icon.png"
         alt="logo"
         className="nav--logo fadedown"
         style={{ animationDelay: '100ms' }}

@@ -14,8 +14,8 @@ function EnergyChart(props) {
         data={props.data}
         minValue={props.minValue}
         index={props.index}
-        categories={[props.category]}
-        colors={[props.color]}
+        categories={props.categories}
+        colors={props.colors}
         yAxisWidth={30}
         connectNulls={true}
       />

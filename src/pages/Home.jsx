@@ -21,8 +21,8 @@ function Home() {
         <EnergyChart
           title="Electricity"
           data={monthData}
-          color="green"
-          category="kWh"
+          colors={['green']}
+          categories={['kWh']}
           index="date"
           minValue={15}
         />
@@ -35,8 +35,8 @@ function Home() {
         <EnergyChart
           title="Wood Pellets"
           data={monthData}
-          color="yellow"
-          category="%"
+          colors={['yellow']}
+          categories={['%']}
           index="date"
           minValue={0}
         />
@@ -49,8 +49,8 @@ function Home() {
         <EnergyChart
           title="Water"
           data={monthData}
-          color="blue"
-          category="L"
+          colors={['blue']}
+          categories={['L']}
           index="date"
           minValue={150}
         />

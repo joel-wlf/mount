@@ -1,9 +1,8 @@
-import { Card } from '@geist-ui/core';
-import { Metric, Text, Flex, ProgressBar, Grid } from '@tremor/react';
+import { Flex, Metric, ProgressBar, Text } from '@tremor/react';
 
 function EnergyStorage(props) {
   return (
-    <Card key={props.title}>
+    <div className="border-[1px] border-[#333] rounded-[10px] p-4">
       <Flex
         justifyContent="start"
         alignItems="center"
@@ -17,7 +16,7 @@ function EnergyStorage(props) {
         value={props.progress}
         className="mt-2"
       />
-    </Card>
+    </div>
   );
 }
 
