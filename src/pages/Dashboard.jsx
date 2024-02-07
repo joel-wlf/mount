@@ -6,6 +6,8 @@ import EnergyStorage from '../components/EnergyStorage';
 import Navbar from '../components/Navbar';
 import NewsItem from '../components/NewsItem';
 import monthData from '../data/monthData';
+import FeatureCard from '../components/FeatureCard';
+import { Radio } from 'lucide-react';
 
 function Dashboard() {
   const [hidden, setHidden] = useBodyScroll();
@@ -39,6 +41,11 @@ function Dashboard() {
           subtitle="in Battery"
           progress={51}
           color="green"
+        />
+        <FeatureCard
+          icon={<Radio size={45} />}
+          title="Wireless Charging"
+          initial={true}
         />
         <NewsItem
           key="Zuschüsse genehmigt"
