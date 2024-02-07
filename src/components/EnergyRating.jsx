@@ -1,9 +1,8 @@
-import { Card } from '@geist-ui/core';
 import { CategoryBar, Flex, Metric, Text } from '@tremor/react';
 
 function EnergyRating(props) {
   return (
-    <Card className="max-w-sm mx-auto">
+    <div className="border-[1px] border-[#333] rounded-[10px] p-4">
       <Flex
         justifyContent="start"
         alignItems="center"
@@ -19,7 +18,7 @@ function EnergyRating(props) {
         markerValue={props.markerValue}
         className="mt-3"
       />
-    </Card>
+    </div>
   );
 }
 
