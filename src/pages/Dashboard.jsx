@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar';
 import NewsItem from '../components/NewsItem';
 import monthData from '../data/monthData';
 import FeatureCard from '../components/FeatureCard';
-import { Radio } from 'lucide-react';
+import { Radio, CarTaxiFront, Package } from 'lucide-react';
 
 function Dashboard() {
   const [hidden, setHidden] = useBodyScroll();
@@ -47,6 +47,12 @@ function Dashboard() {
           title="Wireless Charging"
           initial={true}
         />
+        <h4
+          className="underline underline-offset-4 pl-2 cursor-pointer flex items-center gap-1"
+          onClick={() => navigate('/car')}
+        >
+          My Car <ArrowRight size={18} />
+        </h4>
         <NewsItem
           key="Zuschüsse genehmigt"
           handleScroll={setHidden}
@@ -67,6 +73,24 @@ function Dashboard() {
         >
           Alle News <ArrowRight size={18} />
         </h4>
+        <div className="flex items-center justify-around">
+          <div
+            onClick={() => navigate('/services/share-ride')}
+            className="group flex items-center justify-center h-[20vh] border-[1px] border-[#333] hover:border-[#555] duration-300 rounded-[10px] w-[45%] p-2"
+          >
+            <CarTaxiFront
+              className="group-hover:scale-110 transition-all"
+              size={55}
+            />
+          </div>
+          <div className="group flex items-center justify-center h-[20vh] border-[1px] border-[#333] hover:border-[#555] duration-300 rounded-[10px] w-[45%] p-2">
+            <Package
+              onClick={() => navigate('/services/post-package')}
+              className="group-hover:scale-110 transition-all"
+              size={55}
+            />
+          </div>
+        </div>
       </div>
     </>
   );
