@@ -31,7 +31,7 @@ function Dashboard() {
           minValue={200}
         />
         <h4
-          className="underline underline-offset-4 pl-2 pb-3 cursor-pointer flex items-center gap-1"
+          className="text-gray-300 pl-2 pb-3 cursor-pointer flex items-center gap-1"
           onClick={() => navigate('/home')}
         >
           My Home <ArrowRight size={18} />
@@ -48,7 +48,7 @@ function Dashboard() {
           initial={true}
         />
         <h4
-          className="underline underline-offset-4 pl-2 cursor-pointer flex items-center gap-1"
+          className="text-gray-300 pl-2 cursor-pointer flex items-center gap-1"
           onClick={() => navigate('/car')}
         >
           My Car <ArrowRight size={18} />
@@ -68,12 +68,12 @@ function Dashboard() {
           }}
         />
         <h4
-          className="underline underline-offset-4 pl-2 cursor-pointer flex items-center gap-1"
+          className="text-gray-300 pl-2 cursor-pointer flex items-center gap-1"
           onClick={() => navigate('/news')}
         >
-          Alle News <ArrowRight size={18} />
+          All News <ArrowRight size={18} />
         </h4>
-        <div className="flex items-center justify-around">
+        <div className="flex items-center justify-around py-2">
           <div
             onClick={() => navigate('/services/share-ride')}
             className="group flex items-center justify-center h-[20vh] border-[1px] border-[#333] hover:border-[#555] duration-300 rounded-[10px] w-[45%] p-2"
@@ -91,6 +91,12 @@ function Dashboard() {
             />
           </div>
         </div>
+        <h4
+          className="text-gray-300 pl-2 pt-2 cursor-pointer flex items-center gap-1"
+          onClick={() => navigate('/services')}
+        >
+          All Services <ArrowRight size={18} />
+        </h4>
       </div>
     </>
   );
