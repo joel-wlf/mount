@@ -16,8 +16,8 @@ function PersonCard(props) {
           type="secondary"
           checked={toggle}
           initialChecked={toggle}
-          height="25px"
-          width="45px"
+          height="22px"
+          width="42px"
         />
       </div>
     </div>
