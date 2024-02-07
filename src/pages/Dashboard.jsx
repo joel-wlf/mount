@@ -73,17 +73,17 @@ function Dashboard() {
         >
           All News <ArrowRight size={18} />
         </h4>
-        <div className="flex items-center justify-around py-2">
+        <div className="flex items-center justify-between py-2">
           <div
             onClick={() => navigate('/services/share-ride')}
-            className="group flex items-center justify-center h-[20vh] border-[1px] border-[#333] hover:border-[#555] duration-300 rounded-[10px] w-[45%] p-2"
+            className="group flex items-center justify-center h-[20vh] border-[1px] border-[#333] hover:border-[#555] duration-300 rounded-[10px] w-[48%] p-2"
           >
             <CarTaxiFront
               className="group-hover:scale-110 transition-all"
               size={55}
             />
           </div>
-          <div className="group flex items-center justify-center h-[20vh] border-[1px] border-[#333] hover:border-[#555] duration-300 rounded-[10px] w-[45%] p-2">
+          <div className="group flex items-center justify-center h-[20vh] border-[1px] border-[#333] hover:border-[#555] duration-300 rounded-[10px] w-[48%] p-2">
             <Package
               onClick={() => navigate('/services/post-package')}
               className="group-hover:scale-110 transition-all"
