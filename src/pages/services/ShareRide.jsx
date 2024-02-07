@@ -71,24 +71,24 @@ function ShareRide() {
           />
           <PersonCard
             next={() => setStep(3)}
-            name="Anton"
+            name="James"
             byYou="16:32"
             arrival="16:52"
-            price="14"
+            price="16"
           />
           <PersonCard
             next={() => setStep(3)}
-            name="Anton"
-            byYou="16:32"
-            arrival="16:52"
-            price="14"
+            name="Michael"
+            byYou="16:33"
+            arrival="16:54"
+            price="12"
           />
           <PersonCard
             next={() => setStep(3)}
-            name="Anton"
-            byYou="16:32"
-            arrival="16:52"
-            price="14"
+            name="John"
+            byYou="16:36"
+            arrival="16:55"
+            price="11"
           />
         </div>
         <div
