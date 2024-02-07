@@ -1,12 +1,12 @@
 import { useBodyScroll } from '@geist-ui/core';
+import { ArrowsUpFromLine, Cable, Sprout } from 'lucide-react';
 import EnergyChart from '../components/EnergyChart.jsx';
 import EnergyCounter from '../components/EnergyCounter.jsx';
 import EnergyRating from '../components/EnergyRating.jsx';
 import EnergyStorage from '../components/EnergyStorage.jsx';
+import FeatureCard from '../components/FeatureCard.jsx';
 import Navbar from '../components/Navbar';
 import monthData from '../data/monthData.js';
-import FeatureCard from '../components/FeatureCard.jsx';
-import { Cable, ArrowsUpFromLine } from 'lucide-react';
 
 function Home() {
   const [hidden, setHidden] = useBodyScroll();
@@ -21,8 +21,8 @@ function Home() {
       <div className="content">
         <h2>Home</h2>
         <FeatureCard
-          icon={<Cable size={45} />}
-          title="Energy Sharing"
+          icon={<Sprout size={45} />}
+          title="Double Gardenhouse"
           initial={true}
         />
         <EnergyChart
@@ -38,6 +38,11 @@ function Home() {
           metric="611 kWh"
           delta="30.5%"
           deltaType="moderateDecrease"
+        />
+        <FeatureCard
+          icon={<Cable size={45} />}
+          title="Energy Sharing"
+          initial={true}
         />
         <EnergyChart
           title="Wood Pellets"
