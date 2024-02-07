@@ -1,8 +1,11 @@
 import { useBodyScroll } from '@geist-ui/core';
+import { ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import EnergyChart from '../components/EnergyChart';
+import EnergyStorage from '../components/EnergyStorage';
 import Navbar from '../components/Navbar';
 import NewsItem from '../components/NewsItem';
-import { useNavigate } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import monthData from '../data/monthData';
 
 function Dashboard() {
   const [hidden, setHidden] = useBodyScroll();
@@ -18,6 +21,25 @@ function Dashboard() {
       <Navbar toggleScroll={toggleScroll} />
       <div className="content">
         <h2>Dashboard</h2>
+        <EnergyChart
+          data={monthData}
+          colors={['green', 'blue', 'yellow']}
+          categories={['kWh', 'L', '%']}
+          index="date"
+          minValue={200}
+        />
+        <h4
+          className="underline underline-offset-4 pl-2 pb-3 cursor-pointer flex items-center gap-1"
+          onClick={() => navigate('/home')}
+        >
+          My Home <ArrowRight size={18} />
+        </h4>
+        <EnergyStorage
+          title="Battery usage"
+          subtitle="in Battery"
+          progress={51}
+          color="green"
+        />
         <NewsItem
           key="Zuschüsse genehmigt"
           handleScroll={setHidden}

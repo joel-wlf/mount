@@ -19,8 +19,8 @@ function Car() {
         <EnergyChart
           title="Battery usage"
           data={batteryData}
-          color="green"
-          category="charge"
+          colors={['green']}
+          categories={['charge']}
           index="time"
           minValue={0}
         />
