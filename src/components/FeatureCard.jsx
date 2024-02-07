@@ -17,6 +17,7 @@ function PersonCard(props) {
       <div className="-translate-y-[0.1em]">
         <Toggle
           type="secondary"
+          checked={toggle}
           initialChecked={toggle}
           height="20px"
           width="35px"
