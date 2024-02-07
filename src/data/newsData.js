@@ -20,39 +20,41 @@ export default [
   },
   {
     title: 'Winterverkauf Blumenladen',
-    description: 
-      'Liebe Dorfgemeinschaft, auch in diesem Jahr können wir ...',
+    description: 'Liebe Dorfgemeinschaft, auch in diesem Jahr können wir ...',
     image: 'flower-shop.jpg',
     date: '01.12.2028',
     user: 'Hökers Blumenladen',
     type: 'static',
-    body: 'Liebe Dorfgemeinschaft, mit Freude teilen wir Ihnen mit, dass unser Blumenladen auch diesen Winter für Sie geöffnet bleibt, dank der großzügigen Unterstützung unseres Dorfrats, der uns weitere innovative Gewächshäuser zur Verfügung gestellt hat. In diesen beheizten und solarbetriebenen Einrichtungen können wir das ganze Jahr über eine vielfältige Auswahl an Blumen anpflanzen und Ihnen während des Winter-Verkaufs besondere Angebote präsentieren. Entdecken Sie frische und farbenfrohe Blumen, die auch in den kalten Monaten Ihr Zuhause schmücken können. Wir laden Sie herzlich ein, Teil unseres diesjährigen Winter-Verkaufs im Blumenladen zu sein und sich von der blühenden Pracht verzaubern zu lassen. Bis dann Hökers Blumenladen.'
+    body: 'Liebe Dorfgemeinschaft, mit Freude teilen wir Ihnen mit, dass unser Blumenladen auch diesen Winter für Sie geöffnet bleibt, dank der großzügigen Unterstützung unseres Dorfrats, der uns weitere innovative Gewächshäuser zur Verfügung gestellt hat. In diesen beheizten und solarbetriebenen Einrichtungen können wir das ganze Jahr über eine vielfältige Auswahl an Blumen anpflanzen und Ihnen während des Winter-Verkaufs besondere Angebote präsentieren. Entdecken Sie frische und farbenfrohe Blumen, die auch in den kalten Monaten Ihr Zuhause schmücken können. Wir laden Sie herzlich ein, Teil unseres diesjährigen Winter-Verkaufs im Blumenladen zu sein und sich von der blühenden Pracht verzaubern zu lassen. Bis dann Hökers Blumenladen.',
   },
   {
     title: 'Infoabend',
-    description: 'Liebe Dorfgemeinschaft, wir würden euch gerne zu einem Infoabend einladen ...',
+    description:
+      'Liebe Dorfgemeinschaft, wir würden euch gerne zu einem Infoabend einladen ...',
     image: 'infoabend.jpg',
     date: '06.12.2028',
     user: 'Dorfvorstand',
     type: 'static',
-    body:'Liebe Dorfgemeinschaft, wir würden euch gerne zu einem Infoabend einladen, bei dem wir zukünftige Erneuerungen mit euch absprechen und gegebenenfalls einige Sachen abstimmen wollen. Jeder ist herzlich eingeladen daran teilzunehmen und seine eigenen Vorschläge mit einzubringen. Der Infoabend wird nächste Woche Mittwoch um 20 Uhr im Gemeindehaus stattfinden.'
+    body: 'Liebe Dorfgemeinschaft, wir würden euch gerne zu einem Infoabend einladen, bei dem wir zukünftige Erneuerungen mit euch absprechen und gegebenenfalls einige Sachen abstimmen wollen. Jeder ist herzlich eingeladen daran teilzunehmen und seine eigenen Vorschläge mit einzubringen. Der Infoabend wird nächste Woche Mittwoch um 20 Uhr im Gemeindehaus stattfinden.',
   },
   {
     title: 'Dorffest',
-    description: 'Liebe Dorfgemeinschaft, Auch dieses Jahr wollen wir zugunsten unseres 3 Jährigen ...',
-    image: 'dorffest.jpg'                       ,
+    description:
+      'Liebe Dorfgemeinschaft, Auch dieses Jahr wollen wir zugunsten unseres 3 Jährigen ...',
+    image: 'dorffest.jpg',
     date: '15.06.2028',
     user: 'Dorfvorstand',
     type: 'static',
-    body: 'Liebe Dorfgemeinschaft, auch dieses Jahr wollen wir zugunsten unseres 3 Jährigen Bestehens ein großangelegtes Dorffest feiern. Ob groß oder klein, jeder ist eingeladen und für Speiß und Trank ist natürlich auch gesorgt. Das Dorffest wird nächste Woche Samstag ab 14:00 stattfinden. Alle sind herzlich eingeladen. Wer sich an den Vorbereitungen zum Dorffest beteiligen will oder noch Vorschläge einbringen will melde sich bitte beim Dorfvorstand. Wir bräuchten noch Hilfe bei den Vorbereitungen der Kinderspiele und bei dem Aufbau der Stände. Euer Dorfvorstand'
+    body: 'Liebe Dorfgemeinschaft, auch dieses Jahr wollen wir zugunsten unseres 3 Jährigen Bestehens ein großangelegtes Dorffest feiern. Ob groß oder klein, jeder ist eingeladen und für Speiß und Trank ist natürlich auch gesorgt. Das Dorffest wird nächste Woche Samstag ab 14:00 stattfinden. Alle sind herzlich eingeladen. Wer sich an den Vorbereitungen zum Dorffest beteiligen will oder noch Vorschläge einbringen will melde sich bitte beim Dorfvorstand. Wir bräuchten noch Hilfe bei den Vorbereitungen der Kinderspiele und bei dem Aufbau der Stände. Euer Dorfvorstand',
   },
   {
     title: 'Zuschüsse genehmigt',
-    description: 'Die Zuschüsse des EU-Parlamentes wurden genehmigt tragen zu ...',
+    description:
+      'Die Zuschüsse des EU-Parlamentes wurden genehmigt tragen zu ...',
     image: 'eu-parlament.jpg',
     date: '15.12.2028',
     user: 'Dorfvorstand',
     type: 'static',
-    body: 'Wir wollen euch hiermit mit Freuden mitteilen, dass die erneuten Zuschüsse für unser smartes Dorf genehmigt worden sind. Somit haben wir Zugriff auf weitere 150 Tausend Euro mit denen wir unser Straßennetz auf den neusten Stand upgraden  können und somit weiter zu unserem Ziel „150% Klimafreundlich“ zu kommen. Des weiteren wollen wir mit dem Geld unsere Schule auf den neusten Stand bringen und somit den Kindern eine umweltbewusste Erziehung ermöglichen können. Außerdem könnt Ihr bei der nächsten Dorfversammlung noch weitere Vorschläge einbringen, wofür wir das Geld noch verwenden können.Viele Grüße Der Dorfvorstand',
+    body: 'Wir wollen euch hiermit mit Freuden mitteilen, dass die erneuten Zuschüsse für unser smartes Dorf genehmigt worden sind. Somit haben wir Zugriff auf weitere 150 Tausend Euro mit denen wir unser Straßennetz auf den neusten Stand upgraden  können und somit weiter zu unserem Ziel „150% Klimafreundlich“ zu kommen. Des weiteren wollen wir mit dem Geld unsere Schule auf den neusten Stand bringen und somit den Kindern eine umweltbewusste Erziehung ermöglichen können. Außerdem könnt Ihr bei der nächsten Dorfversammlung noch weitere Vorschläge einbringen, wofür wir das Geld noch verwenden können. Viele Grüße Der Dorfvorstand',
   },
 ];

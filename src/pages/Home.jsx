@@ -1,8 +1,10 @@
 import { useBodyScroll } from '@geist-ui/core';
+import { ArrowsUpFromLine, Cable, Sprout } from 'lucide-react';
 import EnergyChart from '../components/EnergyChart.jsx';
 import EnergyCounter from '../components/EnergyCounter.jsx';
 import EnergyRating from '../components/EnergyRating.jsx';
 import EnergyStorage from '../components/EnergyStorage.jsx';
+import FeatureCard from '../components/FeatureCard.jsx';
 import Navbar from '../components/Navbar';
 import monthData from '../data/monthData.js';
 
@@ -18,6 +20,11 @@ function Home() {
       <Navbar toggleScroll={toggleScroll} />
       <div className="content">
         <h2>Home</h2>
+        <FeatureCard
+          icon={<Sprout size={45} />}
+          title="Double Gardenhouse"
+          initial={true}
+        />
         <EnergyChart
           title="Electricity"
           data={monthData}
@@ -32,6 +39,11 @@ function Home() {
           delta="30.5%"
           deltaType="moderateDecrease"
         />
+        <FeatureCard
+          icon={<Cable size={45} />}
+          title="Energy Sharing"
+          initial={true}
+        />
         <EnergyChart
           title="Wood Pellets"
           data={monthData}
@@ -45,6 +57,11 @@ function Home() {
           subtitle="in Storage"
           progress={29}
           color="yellow"
+        />
+        <FeatureCard
+          icon={<ArrowsUpFromLine size={45} />}
+          title="Auto Restock"
+          initial={false}
         />
         <EnergyChart
           title="Water"

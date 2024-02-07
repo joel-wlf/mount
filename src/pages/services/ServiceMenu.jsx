@@ -53,7 +53,7 @@ function ServiceMenu() {
           disabled={true}
           icon="ParkingSquare"
           routes={['rent-car', 'rentout-your-car']}
-          buttonText={['Rent a Car', 'Temporary ']}
+          buttonText={['Temporarily', 'Unavailable']}
         />
       </div>
     </>
