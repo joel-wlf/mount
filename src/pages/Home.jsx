@@ -1,5 +1,5 @@
 import { useBodyScroll } from '@geist-ui/core';
-import { ArrowsUpFromLine, Cable, Sprout } from 'lucide-react';
+import { ArrowsUpFromLine, Cable, Sprout, SunSnow, Droplets } from 'lucide-react';
 import EnergyChart from '../components/EnergyChart.jsx';
 import EnergyCounter from '../components/EnergyCounter.jsx';
 import EnergyRating from '../components/EnergyRating.jsx';
@@ -21,9 +21,14 @@ function Home() {
       <div className="content">
         <h2>My Home</h2>
         <FeatureCard
+          icon={<SunSnow size={45} />}
+          title="Auto Lüften"
+          initial={true}
+        />
+        <FeatureCard
           icon={<Sprout size={45} />}
           title="Double Gardenhouse"
-          initial={true}
+          initial={false}
         />
         <EnergyChart
           title="Electricity"
@@ -72,6 +77,11 @@ function Home() {
           minValue={150}
         />
         <EnergyRating markerValue={40} value={190} values={[50, 20, 20, 10]} />
+        <FeatureCard
+          icon={<Droplets size={45} />}
+          title="Water Plants"
+          initial={true}
+        />
       </div>
     </>
   );
