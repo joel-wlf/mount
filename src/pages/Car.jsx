@@ -20,7 +20,7 @@ function Car() {
     <>
       <Navbar toggleScroll={toggleScroll} />
       <div className="content">
-        <h2>Car</h2>
+        <h2>My Car</h2>
         <EnergyChart
           title="Battery usage"
           data={batteryData}

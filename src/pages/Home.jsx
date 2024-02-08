@@ -19,7 +19,7 @@ function Home() {
     <>
       <Navbar toggleScroll={toggleScroll} />
       <div className="content">
-        <h2>Home</h2>
+        <h2>My Home</h2>
         <FeatureCard
           icon={<Sprout size={45} />}
           title="Double Gardenhouse"
