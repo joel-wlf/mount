@@ -10,8 +10,9 @@ https://mount-control.vercel.app
 
 ## Authors
 
-- [@joel-wlf](https://www.github.com/joel-wlf)
-- [@Forbium](https://github.com/forbium)
+- [Joel (@joel-wlf)](https://www.github.com/joel-wlf)
+- [Jannes (@code-jq)](https://www.github.com/code-jq)
+- [Tymofii (@Forbium)](https://github.com/forbium)
 
 ## License
 
